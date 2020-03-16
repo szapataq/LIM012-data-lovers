@@ -1,3 +1,28 @@
+
 body{
-    background-color: yellow;
+    background-color: blue;
 }
+#container-pokemon{
+    background-color: antiquewhite;
+    padding: 2em;
+    grid-template-columns: 1fr 1fr;
+    gap: 0em;
+}
+
+
+.pokemon-name{
+    font-family: cursive;
+}
+.pokemon-group{
+    background-color: coral;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0em;
+}
+.pokemon-img{
+    background-color: blueviolet;
+}
+.pokemon-info{
+    background-color: chartreuse;
+}
+
