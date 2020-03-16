@@ -1,4 +1,5 @@
-export const pokemon = [{
+export default {
+    "pokemon" : [{
         "num": "001",
         "name": "bulbasaur",
         "generation": {
@@ -93,8 +94,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "002",
         "name": "ivysaur",
         "generation": {
@@ -189,8 +190,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "003",
         "name": "venusaur",
         "generation": {
@@ -285,8 +286,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "004",
         "name": "charmander",
         "generation": {
@@ -379,8 +380,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "005",
         "name": "charmeleon",
         "generation": {
@@ -480,8 +481,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "006",
         "name": "charizard",
         "generation": {
@@ -596,8 +597,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "007",
         "name": "squirtle",
         "generation": {
@@ -688,8 +689,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "008",
         "name": "wartortle",
         "generation": {
@@ -780,8 +781,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "009",
         "name": "blastoise",
         "generation": {
@@ -872,8 +873,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "010",
         "name": "caterpie",
         "generation": {
@@ -949,8 +950,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "011",
         "name": "metapod",
         "generation": {
@@ -1026,8 +1027,8 @@ export const pokemon = [{
                 "candy-cost": "12"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "012",
         "name": "butterfree",
         "generation": {
@@ -1129,8 +1130,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "013",
         "name": "weedle",
         "generation": {
@@ -1210,8 +1211,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "014",
         "name": "kakuna",
         "generation": {
@@ -1291,8 +1292,8 @@ export const pokemon = [{
                 "candy-cost": "12"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "015",
         "name": "beedrill",
         "generation": {
@@ -1394,8 +1395,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "016",
         "name": "pidgey",
         "generation": {
@@ -1487,8 +1488,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "017",
         "name": "pidgeotto",
         "generation": {
@@ -1580,8 +1581,8 @@ export const pokemon = [{
                 "candy-cost": "12"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "018",
         "name": "pidgeot",
         "generation": {
@@ -1687,8 +1688,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "019",
         "name": "rattata",
         "generation": {
@@ -1770,8 +1771,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "020",
         "name": "raticate",
         "generation": {
@@ -1853,8 +1854,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "021",
         "name": "spearow",
         "generation": {
@@ -1948,8 +1949,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "022",
         "name": "fearow",
         "generation": {
@@ -2043,8 +2044,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "023",
         "name": "ekans",
         "generation": {
@@ -2138,8 +2139,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "024",
         "name": "arbok",
         "generation": {
@@ -2226,8 +2227,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "025",
         "name": "pikachu",
         "generation": {
@@ -2323,8 +2324,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "026",
         "name": "raichu",
         "generation": {
@@ -2427,8 +2428,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "027",
         "name": "sandshrew",
         "generation": {
@@ -2521,8 +2522,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "028",
         "name": "sandslash",
         "generation": {
@@ -2608,8 +2609,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "029",
         "name": "nidoran ♀ (female)",
         "generation": {
@@ -2701,8 +2702,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "030",
         "name": "nidorina",
         "generation": {
@@ -2794,8 +2795,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "031",
         "name": "nidoqueen",
         "generation": {
@@ -2890,8 +2891,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "032",
         "name": "nidoran ♂ (male)",
         "generation": {
@@ -2983,8 +2984,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "033",
         "name": "nidorino",
         "generation": {
@@ -3076,8 +3077,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "034",
         "name": "nidoking",
         "generation": {
@@ -3179,8 +3180,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "035",
         "name": "clefairy",
         "generation": {
@@ -3270,8 +3271,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "036",
         "name": "clefable",
         "generation": {
@@ -3368,8 +3369,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "037",
         "name": "vulpix",
         "generation": {
@@ -3457,8 +3458,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "038",
         "name": "ninetales",
         "generation": {
@@ -3567,8 +3568,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "039",
         "name": "jigglypuff",
         "generation": {
@@ -3672,8 +3673,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "040",
         "name": "wigglytuff",
         "generation": {
@@ -3763,8 +3764,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "041",
         "name": "zubat",
         "generation": {
@@ -3866,8 +3867,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "042",
         "name": "golbat",
         "generation": {
@@ -3968,8 +3969,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "043",
         "name": "oddish",
         "generation": {
@@ -4074,8 +4075,8 @@ export const pokemon = [{
                 ]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "044",
         "name": "gloom",
         "generation": {
@@ -4180,8 +4181,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "045",
         "name": "vileplume",
         "generation": {
@@ -4276,8 +4277,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "046",
         "name": "paras",
         "generation": {
@@ -4369,8 +4370,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "047",
         "name": "parasect",
         "generation": {
@@ -4469,8 +4470,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "048",
         "name": "venonat",
         "generation": {
@@ -4560,8 +4561,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "049",
         "name": "venomoth",
         "generation": {
@@ -4665,8 +4666,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "050",
         "name": "diglett",
         "generation": {
@@ -4759,8 +4760,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "051",
         "name": "dugtrio",
         "generation": {
@@ -4853,8 +4854,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "052",
         "name": "meowth",
         "generation": {
@@ -4943,8 +4944,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "053",
         "name": "persian",
         "generation": {
@@ -5033,8 +5034,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "054",
         "name": "psyduck",
         "generation": {
@@ -5120,8 +5121,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "055",
         "name": "golduck",
         "generation": {
@@ -5207,8 +5208,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "056",
         "name": "mankey",
         "generation": {
@@ -5294,8 +5295,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "057",
         "name": "primeape",
         "generation": {
@@ -5395,8 +5396,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "058",
         "name": "growlithe",
         "generation": {
@@ -5484,8 +5485,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "059",
         "name": "arcanine",
         "generation": {
@@ -5594,8 +5595,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "060",
         "name": "poliwag",
         "generation": {
@@ -5696,8 +5697,8 @@ export const pokemon = [{
                 ]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "061",
         "name": "poliwhirl",
         "generation": {
@@ -5805,8 +5806,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "062",
         "name": "poliwrath",
         "generation": {
@@ -5916,8 +5917,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "063",
         "name": "abra",
         "generation": {
@@ -6007,8 +6008,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "064",
         "name": "kadabra",
         "generation": {
@@ -6098,8 +6099,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "065",
         "name": "alakazam",
         "generation": {
@@ -6203,8 +6204,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "066",
         "name": "machop",
         "generation": {
@@ -6302,8 +6303,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "067",
         "name": "machoke",
         "generation": {
@@ -6401,8 +6402,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "068",
         "name": "machamp",
         "generation": {
@@ -6521,8 +6522,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "069",
         "name": "bellsprout",
         "generation": {
@@ -6617,8 +6618,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "070",
         "name": "weepinbell",
         "generation": {
@@ -6720,8 +6721,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "071",
         "name": "victreebel",
         "generation": {
@@ -6816,8 +6817,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "072",
         "name": "tentacool",
         "generation": {
@@ -6906,8 +6907,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "073",
         "name": "tentacruel",
         "generation": {
@@ -6996,8 +6997,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "074",
         "name": "geodude",
         "generation": {
@@ -7094,8 +7095,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "075",
         "name": "graveler",
         "generation": {
@@ -7206,8 +7207,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "076",
         "name": "golem",
         "generation": {
@@ -7318,8 +7319,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "077",
         "name": "ponyta",
         "generation": {
@@ -7414,8 +7415,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "078",
         "name": "rapidash",
         "generation": {
@@ -7510,8 +7511,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "079",
         "name": "slowpoke",
         "generation": {
@@ -7612,8 +7613,8 @@ export const pokemon = [{
                 }
             ]
         }
-    },
-    {
+        },
+        {
         "num": "080",
         "name": "slowbro",
         "generation": {
@@ -7704,8 +7705,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "081",
         "name": "magnemite",
         "generation": {
@@ -7793,8 +7794,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "082",
         "name": "magneton",
         "generation": {
@@ -7896,8 +7897,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "083",
         "name": "farfetch'd",
         "generation": {
@@ -7987,8 +7988,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "farfetch'd candy"
         }
-    },
-    {
+        },
+        {
         "num": "084",
         "name": "doduo",
         "generation": {
@@ -8082,8 +8083,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "085",
         "name": "dodrio",
         "generation": {
@@ -8177,8 +8178,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "086",
         "name": "seel",
         "generation": {
@@ -8278,8 +8279,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "087",
         "name": "dewgong",
         "generation": {
@@ -8387,8 +8388,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "088",
         "name": "grimer",
         "generation": {
@@ -8482,8 +8483,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "089",
         "name": "muk",
         "generation": {
@@ -8584,8 +8585,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "090",
         "name": "shellder",
         "generation": {
@@ -8671,8 +8672,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "091",
         "name": "cloyster",
         "generation": {
@@ -8773,8 +8774,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "092",
         "name": "gastly",
         "generation": {
@@ -8883,8 +8884,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "093",
         "name": "haunter",
         "generation": {
@@ -8993,8 +8994,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "094",
         "name": "gengar",
         "generation": {
@@ -9110,8 +9111,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "095",
         "name": "onix",
         "generation": {
@@ -9221,8 +9222,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "096",
         "name": "drowzee",
         "generation": {
@@ -9307,8 +9308,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "097",
         "name": "hypno",
         "generation": {
@@ -9407,8 +9408,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "098",
         "name": "krabby",
         "generation": {
@@ -9494,8 +9495,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "099",
         "name": "kingler",
         "generation": {
@@ -9588,8 +9589,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "100",
         "name": "voltorb",
         "generation": {
@@ -9680,8 +9681,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "101",
         "name": "electrode",
         "generation": {
@@ -9772,8 +9773,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "102",
         "name": "exeggcute",
         "generation": {
@@ -9866,8 +9867,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "103",
         "name": "exeggutor",
         "generation": {
@@ -9974,8 +9975,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "104",
         "name": "cubone",
         "generation": {
@@ -10061,8 +10062,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "105",
         "name": "marowak",
         "generation": {
@@ -10148,8 +10149,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "106",
         "name": "hitmonlee",
         "generation": {
@@ -10249,8 +10250,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "107",
         "name": "hitmonchan",
         "generation": {
@@ -10357,8 +10358,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "108",
         "name": "lickitung",
         "generation": {
@@ -10435,8 +10436,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "lickitung candy"
         }
-    },
-    {
+        },
+        {
         "num": "109",
         "name": "koffing",
         "generation": {
@@ -10530,8 +10531,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "110",
         "name": "weezing",
         "generation": {
@@ -10625,8 +10626,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "111",
         "name": "rhyhorn",
         "generation": {
@@ -10727,8 +10728,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "112",
         "name": "rhydon",
         "generation": {
@@ -10829,8 +10830,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "113",
         "name": "chansey",
         "generation": {
@@ -10923,8 +10924,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "114",
         "name": "tangela",
         "generation": {
@@ -11015,8 +11016,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "tangela candy"
         }
-    },
-    {
+        },
+        {
         "num": "115",
         "name": "kangaskhan",
         "generation": {
@@ -11108,8 +11109,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "kangaskhan candy"
         }
-    },
-    {
+        },
+        {
         "num": "116",
         "name": "horsea",
         "generation": {
@@ -11204,8 +11205,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "117",
         "name": "seadra",
         "generation": {
@@ -11307,8 +11308,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "118",
         "name": "goldeen",
         "generation": {
@@ -11394,8 +11395,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "119",
         "name": "seaking",
         "generation": {
@@ -11495,8 +11496,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "120",
         "name": "staryu",
         "generation": {
@@ -11589,8 +11590,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "121",
         "name": "starmie",
         "generation": {
@@ -11702,8 +11703,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "122",
         "name": "mr. mime",
         "generation": {
@@ -11790,8 +11791,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "123",
         "name": "scyther",
         "generation": {
@@ -11899,8 +11900,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "124",
         "name": "jynx",
         "generation": {
@@ -12003,8 +12004,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "125",
         "name": "electabuzz",
         "generation": {
@@ -12097,8 +12098,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "126",
         "name": "magmar",
         "generation": {
@@ -12195,8 +12196,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "127",
         "name": "pinsir",
         "generation": {
@@ -12291,8 +12292,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "pinsir candy"
         }
-    },
-    {
+        },
+        {
         "num": "128",
         "name": "tauros",
         "generation": {
@@ -12370,8 +12371,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "tauros candy"
         }
-    },
-    {
+        },
+        {
         "num": "129",
         "name": "magikarp",
         "generation": {
@@ -12434,8 +12435,8 @@ export const pokemon = [{
                 "candy-cost": "400"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "130",
         "name": "gyarados",
         "generation": {
@@ -12544,8 +12545,8 @@ export const pokemon = [{
                 "candy-cost": "400"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "131",
         "name": "lapras",
         "generation": {
@@ -12641,8 +12642,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "lapras candy"
         }
-    },
-    {
+        },
+        {
         "num": "132",
         "name": "ditto",
         "generation": {
@@ -12696,8 +12697,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "ditto candy"
         }
-    },
-    {
+        },
+        {
         "num": "133",
         "name": "eevee",
         "generation": {
@@ -12810,8 +12811,8 @@ export const pokemon = [{
                 }
             ]
         }
-    },
-    {
+        },
+        {
         "num": "134",
         "name": "vaporeon",
         "generation": {
@@ -12889,8 +12890,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "135",
         "name": "jolteon",
         "generation": {
@@ -12974,8 +12975,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "136",
         "name": "flareon",
         "generation": {
@@ -13070,8 +13071,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "137",
         "name": "porygon",
         "generation": {
@@ -13208,8 +13209,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "138",
         "name": "omanyte",
         "generation": {
@@ -13313,8 +13314,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "139",
         "name": "omastar",
         "generation": {
@@ -13418,8 +13419,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "140",
         "name": "kabuto",
         "generation": {
@@ -13509,8 +13510,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "141",
         "name": "kabutops",
         "generation": {
@@ -13607,8 +13608,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "142",
         "name": "aerodactyl",
         "generation": {
@@ -13694,8 +13695,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "aerodactyl candy"
         }
-    },
-    {
+        },
+        {
         "num": "143",
         "name": "snorlax",
         "generation": {
@@ -13784,8 +13785,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "144",
         "name": "articuno",
         "generation": {
@@ -13860,8 +13861,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "articuno candy"
         }
-    },
-    {
+        },
+        {
         "num": "145",
         "name": "zapdos",
         "generation": {
@@ -13944,8 +13945,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "zapdos candy"
         }
-    },
-    {
+        },
+        {
         "num": "146",
         "name": "moltres",
         "generation": {
@@ -14021,8 +14022,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "moltres candy"
         }
-    },
-    {
+        },
+        {
         "num": "147",
         "name": "dratini",
         "generation": {
@@ -14114,8 +14115,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "148",
         "name": "dragonair",
         "generation": {
@@ -14207,8 +14208,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "149",
         "name": "dragonite",
         "generation": {
@@ -14324,8 +14325,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "150",
         "name": "mewtwo",
         "generation": {
@@ -14412,8 +14413,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "mewtwo candy"
         }
-    },
-    {
+        },
+        {
         "num": "151",
         "name": "mew",
         "generation": {
@@ -14520,8 +14521,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "mew candy"
         }
-    },
-    {
+        },
+        {
         "num": "152",
         "name": "chikorita",
         "generation": {
@@ -14614,8 +14615,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "153",
         "name": "bayleef",
         "generation": {
@@ -14708,8 +14709,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "154",
         "name": "meganium",
         "generation": {
@@ -14802,8 +14803,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "155",
         "name": "cyndaquil",
         "generation": {
@@ -14896,8 +14897,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "156",
         "name": "quilava",
         "generation": {
@@ -14990,8 +14991,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "157",
         "name": "typhlosion",
         "generation": {
@@ -15084,8 +15085,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "158",
         "name": "totodile",
         "generation": {
@@ -15176,8 +15177,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "159",
         "name": "croconaw",
         "generation": {
@@ -15268,8 +15269,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "160",
         "name": "feraligatr",
         "generation": {
@@ -15360,8 +15361,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "161",
         "name": "sentret",
         "generation": {
@@ -15443,8 +15444,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "162",
         "name": "furret",
         "generation": {
@@ -15526,8 +15527,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "163",
         "name": "hoothoot",
         "generation": {
@@ -15600,8 +15601,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "164",
         "name": "noctowl",
         "generation": {
@@ -15689,8 +15690,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "165",
         "name": "ledyba",
         "generation": {
@@ -15779,8 +15780,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "166",
         "name": "ledian",
         "generation": {
@@ -15869,8 +15870,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "167",
         "name": "spinarak",
         "generation": {
@@ -15960,8 +15961,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "168",
         "name": "ariados",
         "generation": {
@@ -16051,8 +16052,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "169",
         "name": "crobat",
         "generation": {
@@ -16147,8 +16148,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "170",
         "name": "chinchou",
         "generation": {
@@ -16236,8 +16237,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "171",
         "name": "lanturn",
         "generation": {
@@ -16325,8 +16326,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "172",
         "name": "pichu",
         "generation": {
@@ -16415,8 +16416,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "173",
         "name": "cleffa",
         "generation": {
@@ -16521,8 +16522,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "174",
         "name": "igglybuff",
         "generation": {
@@ -16621,8 +16622,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "175",
         "name": "togepi",
         "generation": {
@@ -16724,8 +16725,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "176",
         "name": "togetic",
         "generation": {
@@ -16824,8 +16825,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "177",
         "name": "natu",
         "generation": {
@@ -16914,8 +16915,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "178",
         "name": "xatu",
         "generation": {
@@ -17004,8 +17005,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "179",
         "name": "mareep",
         "generation": {
@@ -17094,8 +17095,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "180",
         "name": "flaaffy",
         "generation": {
@@ -17184,8 +17185,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "181",
         "name": "ampharos",
         "generation": {
@@ -17274,8 +17275,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "182",
         "name": "bellossom",
         "generation": {
@@ -17372,8 +17373,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "183",
         "name": "marill",
         "generation": {
@@ -17467,8 +17468,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "184",
         "name": "azumarill",
         "generation": {
@@ -17562,8 +17563,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "185",
         "name": "sudowoodo",
         "generation": {
@@ -17651,8 +17652,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "186",
         "name": "politoed",
         "generation": {
@@ -17747,8 +17748,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "187",
         "name": "hoppip",
         "generation": {
@@ -17842,8 +17843,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "188",
         "name": "skiploom",
         "generation": {
@@ -17937,8 +17938,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "189",
         "name": "jumpluff",
         "generation": {
@@ -18032,8 +18033,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "190",
         "name": "aipom",
         "generation": {
@@ -18110,8 +18111,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "aipom candy"
         }
-    },
-    {
+        },
+        {
         "num": "191",
         "name": "sunkern",
         "generation": {
@@ -18203,8 +18204,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "192",
         "name": "sunflora",
         "generation": {
@@ -18296,8 +18297,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "193",
         "name": "yanma",
         "generation": {
@@ -18381,8 +18382,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "yanma candy"
         }
-    },
-    {
+        },
+        {
         "num": "194",
         "name": "wooper",
         "generation": {
@@ -18468,8 +18469,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "195",
         "name": "quagsire",
         "generation": {
@@ -18555,8 +18556,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "196",
         "name": "espeon",
         "generation": {
@@ -18641,8 +18642,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "197",
         "name": "umbreon",
         "generation": {
@@ -18721,8 +18722,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "198",
         "name": "murkrow",
         "generation": {
@@ -18816,8 +18817,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "199",
         "name": "slowking",
         "generation": {
@@ -18911,8 +18912,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "200",
         "name": "misdreavus",
         "generation": {
@@ -19002,8 +19003,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "201",
         "name": "unown",
         "generation": {
@@ -19060,8 +19061,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "unown candy"
         }
-    },
-    {
+        },
+        {
         "num": "202",
         "name": "wobbuffet",
         "generation": {
@@ -19131,8 +19132,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "203",
         "name": "girafarig",
         "generation": {
@@ -19211,8 +19212,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "girafarig candy"
         }
-    },
-    {
+        },
+        {
         "num": "204",
         "name": "pineco",
         "generation": {
@@ -19298,8 +19299,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "205",
         "name": "forretress",
         "generation": {
@@ -19386,8 +19387,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "206",
         "name": "dunsparce",
         "generation": {
@@ -19464,8 +19465,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "dunsparce candy"
         }
-    },
-    {
+        },
+        {
         "num": "207",
         "name": "gligar",
         "generation": {
@@ -19556,8 +19557,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "208",
         "name": "steelix",
         "generation": {
@@ -19651,8 +19652,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "209",
         "name": "snubbull",
         "generation": {
@@ -19738,8 +19739,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "210",
         "name": "granbull",
         "generation": {
@@ -19825,8 +19826,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "211",
         "name": "qwilfish",
         "generation": {
@@ -19910,8 +19911,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "qwilfish candy"
         }
-    },
-    {
+        },
+        {
         "num": "212",
         "name": "scizor",
         "generation": {
@@ -20002,8 +20003,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "213",
         "name": "shuckle",
         "generation": {
@@ -20084,8 +20085,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "shuckle candy"
         }
-    },
-    {
+        },
+        {
         "num": "214",
         "name": "heracross",
         "generation": {
@@ -20170,8 +20171,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "heracross candy"
         }
-    },
-    {
+        },
+        {
         "num": "215",
         "name": "sneasel",
         "generation": {
@@ -20264,8 +20265,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "216",
         "name": "teddiursa",
         "generation": {
@@ -20347,8 +20348,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "217",
         "name": "ursaring",
         "generation": {
@@ -20430,8 +20431,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "218",
         "name": "slugma",
         "generation": {
@@ -20519,8 +20520,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "219",
         "name": "magcargo",
         "generation": {
@@ -20610,8 +20611,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "220",
         "name": "swinub",
         "generation": {
@@ -20698,8 +20699,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "221",
         "name": "piloswine",
         "generation": {
@@ -20786,8 +20787,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "222",
         "name": "corsola",
         "generation": {
@@ -20872,8 +20873,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "corsola candy"
         }
-    },
-    {
+        },
+        {
         "num": "223",
         "name": "remoraid",
         "generation": {
@@ -20959,8 +20960,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "224",
         "name": "octillery",
         "generation": {
@@ -21046,8 +21047,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "225",
         "name": "delibird",
         "generation": {
@@ -21130,8 +21131,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "delibird candy"
         }
-    },
-    {
+        },
+        {
         "num": "226",
         "name": "mantine",
         "generation": {
@@ -21219,8 +21220,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "227",
         "name": "skarmory",
         "generation": {
@@ -21303,8 +21304,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "skarmory candy"
         }
-    },
-    {
+        },
+        {
         "num": "228",
         "name": "houndour",
         "generation": {
@@ -21394,8 +21395,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "229",
         "name": "houndoom",
         "generation": {
@@ -21485,8 +21486,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "230",
         "name": "kingdra",
         "generation": {
@@ -21581,8 +21582,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "231",
         "name": "phanpy",
         "generation": {
@@ -21668,8 +21669,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "232",
         "name": "donphan",
         "generation": {
@@ -21755,8 +21756,8 @@ export const pokemon = [{
                 "candy-cost": "50"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "233",
         "name": "porygon2",
         "generation": {
@@ -21851,8 +21852,8 @@ export const pokemon = [{
                 }
             }]
         }
-    },
-    {
+        },
+        {
         "num": "234",
         "name": "stantler",
         "generation": {
@@ -21929,8 +21930,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "stantler candy"
         }
-    },
-    {
+        },
+        {
         "num": "235",
         "name": "smeargle",
         "generation": {
@@ -21984,8 +21985,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "smeargle candy"
         }
-    },
-    {
+        },
+        {
         "num": "236",
         "name": "tyrogue",
         "generation": {
@@ -22082,8 +22083,8 @@ export const pokemon = [{
                 }
             ]
         }
-    },
-    {
+        },
+        {
         "num": "237",
         "name": "hitmontop",
         "generation": {
@@ -22169,8 +22170,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "238",
         "name": "smoochum",
         "generation": {
@@ -22264,8 +22265,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "239",
         "name": "elekid",
         "generation": {
@@ -22365,8 +22366,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "240",
         "name": "magby",
         "generation": {
@@ -22470,8 +22471,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "241",
         "name": "miltank",
         "generation": {
@@ -22548,8 +22549,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "miltank candy"
         }
-    },
-    {
+        },
+        {
         "num": "242",
         "name": "blissey",
         "generation": {
@@ -22636,8 +22637,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "243",
         "name": "raikou",
         "generation": {
@@ -22716,8 +22717,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "raikou candy"
         }
-    },
-    {
+        },
+        {
         "num": "244",
         "name": "entei",
         "generation": {
@@ -22800,8 +22801,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "entei candy"
         }
-    },
-    {
+        },
+        {
         "num": "245",
         "name": "suicune",
         "generation": {
@@ -22882,8 +22883,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "suicune candy"
         }
-    },
-    {
+        },
+        {
         "num": "246",
         "name": "larvitar",
         "generation": {
@@ -22981,8 +22982,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "247",
         "name": "pupitar",
         "generation": {
@@ -23080,8 +23081,8 @@ export const pokemon = [{
                 "candy-cost": "25"
             }]
         }
-    },
-    {
+        },
+        {
         "num": "248",
         "name": "tyranitar",
         "generation": {
@@ -23181,8 +23182,8 @@ export const pokemon = [{
                 }]
             }]
         }
-    },
-    {
+        },
+        {
         "num": "249",
         "name": "lugia",
         "generation": {
@@ -23266,8 +23267,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "lugia candy"
         }
-    },
-    {
+        },
+        {
         "num": "250",
         "name": "ho-oh",
         "generation": {
@@ -23353,8 +23354,8 @@ export const pokemon = [{
         "evolution": {
             "candy": "ho-oh candy"
         }
-    },
-    {
+        },
+        {
         "num": "251",
         "name": "celebi",
         "generation": {
@@ -23439,5 +23440,5 @@ export const pokemon = [{
         "evolution": {
             "candy": "celebi candy"
         }
-    }
-];
+    }]
+};
