@@ -27,7 +27,7 @@ export default {
             "base-defense": "111",
             "base-stamina": "128",
             "max-cp": "1115",
-            "max-hp": "113"
+            "max-hp": "113" 
         },
         "resistant": [
             "water",
