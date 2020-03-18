@@ -5,13 +5,13 @@ body{
 #container-pokemon{
     background-color: antiquewhite;
     padding: 2em;
-    grid-template-columns: 1fr 1fr;
-    gap: 0em;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1.5em;
 }
-
-
 .pokemon-name{
     font-family: cursive;
+    text-transform: capitalize;
 }
 .pokemon-group{
     background-color: coral;
