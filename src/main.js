@@ -11,8 +11,10 @@ const showPokemon = (list) => {
           <img src="${pokem.img}">
         </div>
         <div class="pokemon-info">
-          <p>${pokem.name}</p>
-          <p>${pokem.num}</p>
+          <p class="poke-name">${pokem.name}</p>
+          <p class="poke-num"> N° ${pokem.num}</p>
+          <p class="poke-info"> CP Máx: ${pokem.stats['max-cp']}</p>
+          <p class="poke-info"> HP Máx: ${pokem.stats['max-hp']}</p>
         </div>
       </div> `;
     containerPokemon.innerHTML += card;
