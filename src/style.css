@@ -1,71 +1,130 @@
 body{
-    background-color: white;
     font-family: sans-serif;
     margin:0;
 }
-#menu{
-    background-color: orangered;
-}
 .pokedex{
-    background-color:magenta;
-    padding: 2em;
-    box-sizing: border-box;
-}
-.search{
-    background-color: palegreen;
-}
-.functions{
-    background-color: palevioletred;
+    background-color: #ecf1f4;
 }
 
-#container-pokemon{
-    background-color: antiquewhite;
-    background-color: white;
-    padding: 2em;
-    /*display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5em;*/
-}
-.poke-name {
-    font-family: sans-serif;
-    text-transform: capitalize;
-    font-weight: bold;
+/* -----------Estilos de header--------------------- */
+
+.list-elements-nav {
+    padding: 0;
+    margin: 0;
+    background-color:#171817;
+    line-height: 50px;
     font-size: 20px;
+    text-align: right;
+}
+
+.list-elements-nav li {
+    list-style: none;
+    width: 150px;
+    display: inline-block;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+a:hover {
+    background: #54b9b1;
+}
+
+/* -----------Estilos Buscador--------------------- */
+.searcher{
+    background-color: burlywood;
+}
+.search {
+    height: 40px;
+}
+.btn-search {
+    height: 40px;
+    background-color: rgb(30, 32, 31);
+    color: white;
+    font-size: 15px;
+}
+/* -----------Estilos de Menu de funciones------------- */
+.menu-container {
+    background-color: rgb(27, 29, 29);
+    color: white;
+    align-items: center;
+}
+.filters {
+    margin: 1em;
+    margin-left: 1em;
+}
+
+/* ---------------Estilos conteo----------------- */
+.pokemones-quantity{
+    padding: 0em 3em;
+}
+
+/* ---------------Estilos Card pokemon----------------- */
+#container-card{/**contenedor de card*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    background-color: #ecf1f4;
+    padding: 3em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .pokemon-group{
-    margin: 0;
+    background-color: #fcfcf9;
+    border: solid 1px #8ea1a2;
     padding: 1em;
+    margin: 1em;
+    border-radius: 0.4em;
+    max-width:300px;
+    min-width: 270px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 53% 47%;
+    flex-basis: 30%;
 }
-.pokemon-img{
-    background-color: rgb(220, 248, 231);
-    border: solid 1px rgb(122, 201, 177);
-    text-align: center;
-    padding: 2em;
+.poke-name {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 0.7em 0em;
 }
-.pokemon-info {
-    background-color: white;
-    border: solid 3px #DDDDDD;
-    padding-left: 1em;
+img{
+    width: 140px;
+    height: auto;
+}
+
+.poke-img{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-info {
+    border-left: solid 2px #DDDDDD;
     font-size: 14px;
+    padding-left: 1em;
+    height: 150px;
 }
-main{
-    width: 100%;
+.poke-info {
+    font-size: 15px;
 }
 
-@media( min-width: 1024px ){
-    #container-pokemon{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
+/* ---------------Fin estilos Card pokemon----------------- */
+
+@media( max-width: 768px ){
+    #container-pokemon{/**contenedor de card*/
+        max-width: 650px;
     }
-
 }
+/* ---------Estilos en comun---------------------*/
 
-@media( max-width: 320px ){
-    #container-pokemon{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+.comun{
+    text-align: center;
+}
+.bold{
+    font-weight: bold; 
 }
 

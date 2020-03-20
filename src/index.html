@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="IMG/faviconPoke.png" type="image/x-icon" />
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="menu">
-      <p>POKEMON</p>
+    <header>
+      <nav>
+        <ul class="list-elements-nav bold">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pokédex</a></li>
+          <li><a href="#">Dictionary</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <section class="home">
+      </section>
       <section class="pokedex">
-        <form>
-          <div>
-              <input type="search" id="miBusqueda" placeholder="Search the site..." widht="30px" size="50">
-              <button>SEARCH</button>
-          </div>
-      </form>
+        <form class="searcher comun">
+          <input type="search" class="search comun" placeholder="search by name">
+          <button class="btn-search comun bold">Search</button>
+        </form>
+        <div class="menu-container comun bold">
+          <label for="filters"> Type </label>
+          <select class="filters comun" id="selectType">
+            <option value="1">Bug</option>
+            <option value="2">Dark</option>
+            <option value="3">Dragon</option>
+            <option value="4">Electric</option>
+            <option value="5">Fairy</option>
+            <option value="6">Fighting</option>
+            <option value="7">Fire</option>
+            <option value="8">Flying</option>
+            <option value="9">Ghost</option>
+            <option value="10">Grass</option>
+            <option value="11">Ground</option>
+            <option value="12">Ice</option>
+            <option value="13">Normal</option>
+            <option value="14">Poison</option>
+            <option value="15">Psychic</option>
+            <option value="16">Rock</option>
+            <option value="17">Steel</option>
+          </select>
 
-      <div>
-          <p>Aqui va el menu</p>
-      </div>
-      <div id="container-pokemon">
+          <label for="filters"> Filter </label>
+          <select class="filters">
+            <option>CP</option>
+            <option>HP</option>
+            <option>IV</option>
+            <option>Weaknesses</option>
+            <option>Resistence</option>
+            <option>Egg</option>
+          </select>
 
-      </div>
- 
-
+          <label for="filters"> Order </label>
+          <select class="filters">
+            <option> ID </option>
+            <option>Highest to Lowest</option>
+            <option>Lowest to Highest </option>
+            <option>A - Z</option>
+            <option>Z - A</option>
+          </select>
+        </div>
+        <div class="pokemones-quantity">
+          <p>Pokemones</p>
+          <p>Quantity: 251</p>
+        </div>
+        <div id="container-card">
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>aqui va el footer</p>
+
+    <footer class="footer">
+      <p class="piepag">© Copyright by Shirley Garrido Navarro Ft Sandra Zapata - 2020</p>
     </footer>
     <script src="main.js" type="module"></script>
   </body>
