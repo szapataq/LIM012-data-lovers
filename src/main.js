@@ -1,10 +1,12 @@
 import data from './data/pokemon/pokemon.js';
 import {
   filterByType,
+  searchPokemonByName,
 } from './data.js';
 
 const pokemonList = data.pokemon;
 const containerPokemons = document.getElementById('container-card');
+const elementTypeFilter = document.getElementById('element-type-filter');
 
 const showPokemon = (list) => {
   const containerPokemon = document.getElementById('container-card');
@@ -26,10 +28,34 @@ const showPokemon = (list) => {
   return containerPokemon;
 };
 
-showPokemon(pokemonList);
-const elementTypeFilter = document.getElementById('element-type-filter');
+window.addEventListener('load', () => {
+  showPokemon(pokemonList);
+});
 elementTypeFilter.addEventListener('change', () => {
+  if (elementTypeFilter.value === 'all') {
+    showPokemon(pokemonList);
+  }
   const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
   containerPokemons.innerHTML = '';
   showPokemon(catchFilter);
 });
+
+const btnSearch = document.getElementById('btn');
+const inputSearch = document.getElementById('search');
+
+btnSearch.addEventListener('click', () => {
+  containerPokemons.innerHTML = '';
+  showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
+});
+
+
+/* pokemonList.forEach((obj) => {
+  const requiredData = [];
+  console.log(obj.img);
+  console.log(obj.name);
+  console.log(obj.num);
+  console.log(obj.img);
+  console.log(obj.stats['max-cp']);
+  console.log(obj.stats['max-hp']);
+});
+*/

@@ -9,24 +9,26 @@
   </head>
   <body>
     <header>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img class="img-menu" src="img/icon-menu.png"></label>
       <nav>
-        <ul class="list-elements-nav bold">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pokédex</a></li>
-          <li><a href="#">Dictionary</a></li>
+        <ul class="list-elements-nav">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">POKÉDEX</a></li>
+          <li><a href="#">DICTIONARY</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="home">
+        <p>aqui va el video</p>
       </section>
       <section class="pokedex">
-        <form class="searcher comun">
-          <input type="search" class="search comun" placeholder="search by name">
-          <button class="btn-search comun bold">Search</button>
-        </form>
+        <div class="searcher comun">
+          <input type="search" id="search" class="search comun" placeholder="search by name">
+          <button class="btn-search comun bold" id="btn">Search</button>
+        </div>
         <div class="menu-container comun bold">
-          
           <label for="element-type-filter"> Type </label>
           <select id="element-type-filter" >
             <option value="all" selected>All</option>
@@ -74,6 +76,9 @@
         </div>
         <div id="container-card">
         </div>
+      </section>
+      <section>
+        <p>Diccionario</p>
       </section>
     </main>
 

@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body{
-    font-family: sans-serif;
     margin:0;
+    font-family: 'Lato', sans-serif;
 }
 .pokedex{
-    background-color: #ecf1f4;
+    background-color: #f2f2f2;
 }
-
 /* -----------Estilos de header--------------------- */
-
+header{
+    width:100%;
+    background-color:#171817;
+    font-family: 'Lato', sans-serif;
+}
+.img-menu{
+    width: 2em;
+}
+#btn-menu{
+ display: none;
+}
 .list-elements-nav {
     padding: 0;
     margin: 0;
-    background-color:#171817;
     line-height: 50px;
     font-size: 20px;
     text-align: right;
@@ -36,7 +46,7 @@ a:hover {
 
 /* -----------Estilos Buscador--------------------- */
 .searcher{
-    background-color: burlywood;
+    padding: 1em 0em;
 }
 .search {
     height: 40px;
@@ -48,9 +58,9 @@ a:hover {
     font-size: 15px;
 }
 /* -----------Estilos de Menu de funciones------------- */
-.menu-container {
-    background-color: rgb(27, 29, 29);
-    color: white;
+.menu-container >* {
+    margin: 1em;
+    color: black;
     align-items: center;
 }
 .filters {
@@ -68,15 +78,14 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
-    background-color: #ecf1f4;
     padding: 3em 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .pokemon-group{
+    box-shadow: 0 0 10px 0 #c0bebe;
     background-color: #fcfcf9;
-    border: solid 1px #8ea1a2;
     padding: 1em;
     margin: 1em;
     border-radius: 0.4em;
@@ -85,6 +94,7 @@ a:hover {
     display: grid;
     grid-template-columns: 53% 47%;
     flex-basis: 30%;
+    
 }
 .poke-name {
     text-transform: capitalize;
