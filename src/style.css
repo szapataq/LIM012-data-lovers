@@ -84,7 +84,7 @@ a:hover {
     justify-content: space-evenly;
 }
 .pokemon-group{
-    box-shadow: 0 0 10px 0 #c0bebe;
+    box-shadow: 0 0 9px 0 #b6b5b5;
     background-color: #fcfcf9;
     padding: 1em;
     margin: 1em;
