@@ -10,14 +10,6 @@ body{
 }
 /* -----------Estilos de header--------------------- */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> db538a48198f6a727f8d3867e9b8ceefb90c9dc0
-.pokemon-name{
-    font-family: cursive;
-=======
 header{
     width:100%;
     background: linear-gradient(to right,#47ae83, #44a582, 	#3e987f, #39907d, #35867d);
