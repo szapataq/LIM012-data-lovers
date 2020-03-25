@@ -30,18 +30,16 @@ const showPokemon = (list) => {
   return containerPokemon;
 };
 
-window.addEventListener('load', () => {
-  showPokemon(pokemonList);
-});
+showPokemon(pokemonList);
 
 elementTypeFilter.addEventListener('change', () => {
+  const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+  containerPokemons.innerHTML = '';
+  showPokemon(catchFilter);
   if (elementTypeFilter.value === 'all') {
     containerPokemons.innerHTML = '';
     showPokemon(pokemonList);
   }
-  const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
-  containerPokemons.innerHTML = '';
-  showPokemon(catchFilter);
 });
 
 btnSearch.addEventListener('click', () => {
