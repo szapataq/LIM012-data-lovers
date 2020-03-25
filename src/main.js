@@ -30,9 +30,7 @@ const showPokemon = (list) => {
   return containerPokemon;
 };
 
-window.addEventListener('load', () => {
-  showPokemon(pokemonList);
-});
+showPokemon(pokemonList);
 
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
@@ -48,7 +46,6 @@ btnSearch.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
 });
-
 
 /* pokemonList.forEach((obj) => {
   const requiredData = [];
