@@ -33,20 +33,19 @@ const showPokemon = (list) => {
 showPokemon(pokemonList);
 
 elementTypeFilter.addEventListener('change', () => {
-  const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
-  containerPokemons.innerHTML = '';
-  showPokemon(catchFilter);
   if (elementTypeFilter.value === 'all') {
     containerPokemons.innerHTML = '';
     showPokemon(pokemonList);
   }
+  const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+  containerPokemons.innerHTML = '';
+  showPokemon(catchFilter);
 });
 
 btnSearch.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
 });
-
 
 /* pokemonList.forEach((obj) => {
   const requiredData = [];
