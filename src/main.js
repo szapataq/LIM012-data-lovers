@@ -1,36 +1,62 @@
-/**import { example } from './data.js';*/
 import data from './data/pokemon/pokemon.js';
+import {
+  filterByType,
+  searchPokemonByName,
+} from './data.js';
 
+const pokemonList = data.pokemon;
+const containerPokemons = document.getElementById('container-card');
+const elementTypeFilter = document.getElementById('element-type-filter');
+const btnSearch = document.getElementById('btn');
+const inputSearch = document.getElementById('search');
 
+const showPokemon = (list) => {
+  const containerPokemon = document.getElementById('container-card');
+  list.forEach((pokem) => {
+    const card = `
+    <div class="pokemon-group">
+      <div class="poke-img">
+        <img src="${pokem.img}">
+      </div>
+      <div class="container-info">
+        <p class="poke-name bold">${pokem.name}</p>
+        <p class="poke-num"> N° ${pokem.num}</p>
+        <p class="poke-info bold"> CP Máx: ${pokem.stats['max-cp']}</p>
+        <p class="poke-info bold"> HP Máx: ${pokem.stats['max-hp']}</p>
+      </div>
+    </div>`;
+    containerPokemon.innerHTML += card;
+  });
+  return containerPokemon;
+};
 
-let pokemonList = data.pokemon;
-let containerPokemon = document.querySelector("#container-pokemon");
+window.addEventListener('load', () => {
+  showPokemon(pokemonList);
+});
 
-Object.values(pokemonList).map( (pokem) =>{
-    const divGroup = document.createElement("div");
-    const divImg = document.createElement("div");
-    const divInfo = document.createElement("div");
-    const img = document.createElement ("img");
-    const p = document.createElement("p");
+elementTypeFilter.addEventListener('change', () => {
+  if (elementTypeFilter.value === 'all') {
+    containerPokemons.innerHTML = '';
+    showPokemon(pokemonList);
+  }
+  const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+  containerPokemons.innerHTML = '';
+  showPokemon(catchFilter);
+});
 
-    divGroup.className = "pokemon-group";
-    divImg.className = "pokemon-img";
-    divInfo.className = "pokemon-info";
-    p.className = "pokemon-name";
-
-    img.src = `${pokem.img}`;
-    p.innerHTML = `${pokem.name}`;
-
-    divImg.appendChild(img);
-    divInfo.appendChild(p);
-    divGroup.appendChild(divImg);
-    divGroup.appendChild(divInfo);
-    containerPokemon.appendChild(divGroup);
-
+btnSearch.addEventListener('click', () => {
+  containerPokemons.innerHTML = '';
+  showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
 });
 
 
-
-
-
-
+/* pokemonList.forEach((obj) => {
+  const requiredData = [];
+  console.log(obj.img);
+  console.log(obj.name);
+  console.log(obj.num);
+  console.log(obj.img);
+  console.log(obj.stats['max-cp']);
+  console.log(obj.stats['max-hp']);
+});
+*/
