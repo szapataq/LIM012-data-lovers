@@ -7,6 +7,8 @@ import {
 const pokemonList = data.pokemon;
 const containerPokemons = document.getElementById('container-card');
 const elementTypeFilter = document.getElementById('element-type-filter');
+const btnSearch = document.getElementById('btn');
+const inputSearch = document.getElementById('search');
 
 const showPokemon = (list) => {
   const containerPokemon = document.getElementById('container-card');
@@ -31,17 +33,16 @@ const showPokemon = (list) => {
 window.addEventListener('load', () => {
   showPokemon(pokemonList);
 });
+
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
+    containerPokemons.innerHTML = '';
     showPokemon(pokemonList);
   }
   const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
   containerPokemons.innerHTML = '';
   showPokemon(catchFilter);
 });
-
-const btnSearch = document.getElementById('btn');
-const inputSearch = document.getElementById('search');
 
 btnSearch.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
