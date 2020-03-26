@@ -22,52 +22,63 @@
     <main>
       <section class="pokedex">
         <div class="searcher comun">
-          <input type="search" id="search" class="search comun" placeholder="search by name">
+          <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
           <button class="btn-search comun " id="btn">SEARCH</button>
         </div>
         <div class="menu-container comun bold">
-          <label for="element-type-filter"> Type </label>
-          <select id="element-type-filter" >
-            <option value="all">All</option>
-            <option value="bug">Bug</option>
-            <option value="dark">Dark</option>
-            <option value="dragon"> Dragon</option>
-            <option value="electric">Electric</option>
-            <option value="fairy">Fairy</option>
-            <option value="fighting">Fighting</option>
-            <option value="fire">Fire</option>
-            <option value="flying">Flying</option>
-            <option value="ghost">Ghost</option>
-            <option value="grass">Grass</option>
-            <option value="ground">Ground</option>
-            <option value="ice">Ice</option>
-            <option value="normal">Normal</option>
-            <option value="poison">Poison</option>
-            <option value="psychic">Psychic</option>
-            <option value="rock">Rock</option>
-            <option value="steel">Steel</option>
-          </select>
-
-          <label for="filters"> Filter </label>
-          <select id="filter-function">
-            <option>CP</option>
-            <option>HP</option>
-            <option>IV</option>
-            <option>Weaknesses</option>
-            <option>Resistence</option>
-            <option>Egg</option>
-          </select>
-
-          <label for="filters"> Order </label>
-          <select id="order" >
-            <option> ID </option>
-            <option>Highest to Lowest</option>
-            <option>Lowest to Highest </option>
-            <option>A - Z</option>
-            <option>Z - A</option>
-          </select>
+          <div>
+            <label for="element-type-filter"> Type </label>
+            <select id="element-type-filter" >
+              <option value="all">All</option>
+              <option value="bug">Bug</option>
+              <option value="dark">Dark</option>
+              <option value="dragon"> Dragon</option>
+              <option value="electric">Electric</option>
+              <option value="fairy">Fairy</option>
+              <option value="fighting">Fighting</option>
+              <option value="fire">Fire</option>
+              <option value="flying">Flying</option>
+              <option value="ghost">Ghost</option>
+              <option value="grass">Grass</option>
+              <option value="ground">Ground</option>
+              <option value="ice">Ice</option>
+              <option value="normal">Normal</option>
+              <option value="poison">Poison</option>
+              <option value="psychic">Psychic</option>
+              <option value="rock">Rock</option>
+              <option value="steel">Steel</option>
+            </select>
+          </div>
+          <div>
+            <label for="filters"> Filter </label>
+            <select id="filters">
+              <option>CP</option>
+              <option>HP</option>
+              <option>IV</option>
+              <option>Weaknesses</option>
+              <option>Resistence</option>
+              <option>Egg</option>
+            </select>
+          </div>
+          <div>
+            <label for="order"> Order </label>
+            <select id="order" >
+              <option> ID </option>
+              <option>Highest to Lowest</option>
+              <option>Lowest to Highest </option>
+              <option>A - Z</option>
+              <option>Z - A</option>
+            </select>
+          </div>
+        </div>
+        <div class="pokemones-quantity">
+          <p class="pokemones">Pokemones</p>
+          <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
         </div>
         <div id="container-card">
+        </div>
+        <div class="container-btn-top">
+          <img src="img/btnTop.png" class="btn-top">
         </div>
       </section>
     </main>
