@@ -4,6 +4,7 @@ body{
     margin:0em;
     padding: 0em;
     font-family: 'Lato', sans-serif;
+    background-color: #443F3E;
 }
 .pokedex{
     background-color: #f2f2f2;
@@ -17,6 +18,7 @@ header{
 }
 .img-menu{
     width: 2em;
+    height: auto;
 }
 #btn-menu{
     display: none;
@@ -74,19 +76,38 @@ header label:hover{
 .searcher{
     padding: 1em 0em;
 }
+.searcher div{
+    margin: 0em auto;
+    height: 40px;
+    width: 30%;
+    min-width: 300px;
+    border-radius: 0.4em;
+    border: solid 1px #337f7b;
+    display:grid;
+    grid-template-columns: 85% 10%;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.searcher img{
+    width: 2em;
+    
+}
 .search {
+    padding: 0em 0em;
     height: 40px;
     outline: 0;
+    border: none;
+    font-family: 'Lato', sans-serif;
 }
 .btn-search {
-    height: 40px;
-    background-color: rgb(30, 32, 31);
-    color: white;
-    font-size: 0.9em;
     outline: 0;
+    border: none;
+    background-color:#ffffff;
 }
 
 /* -----------Estilos de Menu de funciones------------- */
+
 .menu-container{
     max-width: 1100px;
     margin-left: auto;
@@ -94,20 +115,46 @@ header label:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 1em;
+    padding: 0em 0em 1em 0em;
+}
+.all-pokemon{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: 0;
+    background-color:  #84d89b;
+    border-radius: 0.4em;
+    padding: 0.3em 5em;
+}
+.all-pokemon:hover{
+    background-color: #35867d;
+    color:#ffffff;
+    transition: background-color 0.5s ease-out;
+    outline: 0;
 }
 .menu-container div{
-    padding: 0.3em 0em;
+    padding: 1em 1em 0em 1em;
+}
+.menu-container select{
+    background-color: #ffffff;
+    padding: 0.2em;
+    width: 9em;
+    border-radius: 0.4em;
+    outline: 0;
 }
 .menu-container option{
     font-family: 'Lato', sans-serif;
 }
 .menu-container label{
-    padding: 0em 1em;
+    padding: 0em 0.5em;
+}
+.ordenar button{
+    background-color: darkgoldenrod;
+    margin: 2em;
+    width: 3em;
 }
 /* ---------------Estilos conteo----------------- */
 
-.pokemones-quantity{
+.pokemones-quantity{ 
     margin-left: auto;
     margin-right: auto;
     max-width:1100px;
@@ -119,7 +166,7 @@ header label:hover{
     border-top: solid 2px #337f7b;
 }
 .pokemones{
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 .quantity{
@@ -127,10 +174,26 @@ header label:hover{
     width: 120px;
     font-family: 'Lato', sans-serif;
     background: linear-gradient(to right,#a2db96, #84d89b, 	#6ad59f, #51d2a2,#2ecea8);
-    padding: 0.5em 0.5em;
+    padding: 0.3em 0.3em;
     border-radius: 0.4em;
 }
-
+.btn-order{
+    margin-top: 2em;
+    background-image: url("img/ord.png");
+    border-radius: 0.4em;
+    width: 4em;
+    height: 4em;
+    outline: 0;
+    border: solid 2px #337f7b;
+}
+.btn-order:hover{
+    background-color:#84d89b;
+}
+@media( max-width: 768px ){
+    #container-pokemon{/**contenedor de card*/
+        max-width: 650px;
+    }
+}
 /* ---------------Estilos Card pokemon----------------- */
 #container-card{/**contenedor de card*/
     margin-left: auto;
@@ -152,12 +215,11 @@ header label:hover{
     display: grid;
     grid-template-columns: 53% 47%;
     flex-basis: 30%;
-    
 }
 .poke-name {
     text-transform: capitalize;
     font-size: 1.2em;
-    margin: 0.7em 0em;
+    margin: 0.3em 0em 0.5em 0em;
     text-align: center;
     background-color:  #35867d;
     border-radius: 0.4em;
@@ -183,6 +245,7 @@ img{
 .poke-info {
     font-size: 15px;
 }
+
 /* ---------------Estilos btn top ---------------- */
 
 .container-btn-top {
@@ -219,11 +282,33 @@ img{
 
 /* ---------------Estilos Footer ---------------- */
 
-.piepag{
-    background-color: black;
-    color: white;
-    height: 80px;
-    text-align: center;
+
+footer{
+    background-color:  #443F3E;
+    color: #EFEFEF;
+    font-family: 'Lato', sans-serif;
+    margin: 0em auto;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+footer div{
+    padding: 1em 2em;
+    border-left: solid 2px #337f7b;
+}
+.social-network img{
+    width: 30px;
+    width: 30px;
+}
+footer img{
+    width: 11em;
+}
+.apps{
+    padding: 1em; 
+    display: grid; 
+    justify-content: center; 
 }
 
 /* ---------------Fin estilos Card pokemon----------------- */

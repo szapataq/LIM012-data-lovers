@@ -46,6 +46,7 @@ elementTypeFilter.addEventListener('change', () => {
     showPokemon(catchFilter);
   }
 });
+
 // muestra los pokemon buscados atravez del input
 btnSearch.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
@@ -60,7 +61,6 @@ window.onscroll = () => {
     document.querySelector('.container-btn-top').classList.remove('show');
   }
 };
-
 document.querySelector('.container-btn-top').addEventListener('click', () => {
   window.scrollTo({
     top: 0,

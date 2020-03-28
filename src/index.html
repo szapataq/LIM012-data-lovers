@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" href="IMG/faviconPoke.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="" type="image/x-icon" />
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
@@ -19,20 +20,27 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="pokedex">
+        <!--Buscador de pokemon por nombre-->
         <div class="searcher comun">
-          <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
-          <button class="btn-search comun " id="btn">SEARCH</button>
+          <div>
+            <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
+            <button class="btn-search" id="btn"><img src="img/icon-search.png"></button>
+          </div>
         </div>
+        <!--Menu de funciones de filtrado-->
         <div class="menu-container comun bold">
+          <!--Boton de all pokemon-->
+          <div><button class="all-pokemon bold" id="btn">All</button></div>
+          <!--filtro por tipo de pokemon-->
           <div>
             <label for="element-type-filter"> Type </label>
             <select id="element-type-filter" >
               <option value="all">All</option>
               <option value="bug">Bug</option>
               <option value="dark">Dark</option>
-              <option value="water"> Water</option>
               <option value="dragon"> Dragon</option>
               <option value="electric">Electric</option>
               <option value="fairy">Fairy</option>
@@ -48,8 +56,10 @@
               <option value="psychic">Psychic</option>
               <option value="rock">Rock</option>
               <option value="steel">Steel</option>
+              <option value="water"> Water</option>
             </select>
           </div>
+          <!--funciones de pokemon -->
           <div>
             <label for="filters"> Filter </label>
             <select id="filters">
@@ -61,6 +71,7 @@
               <option>Egg</option>
             </select>
           </div>
+          <!--Order by-->
           <div>
             <label for="order"> Order </label>
             <select id="order" >
@@ -72,12 +83,20 @@
             </select>
           </div>
         </div>
+        <!--mostrado de titulo, contador de pokemon y orden de a-z/ z-a-->
         <div class="pokemones-quantity">
-          <p class="pokemones">Pokemones</p>
-          <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
+          <div>
+            <p class="pokemones">Pokemones</p>
+            <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
+          </div>
+          <div>
+            <button class="btn-order" id="btn"></button>
+          </div>
         </div>
+        <!--contenedor de pokemones-->
         <div id="container-card">
         </div>
+        <!--Boton para subir en la pantalla-->
         <div class="container-btn-top">
           <img src="img/btnTop.png" class="btn-top">
         </div>
@@ -85,9 +104,23 @@
     </main>
 
 
-    <footer class="footer">
-      <p class="piepag">© Copyright by Shirley Garrido Navarro Ft Sandra Zapata - 2020</p>
+    <footer>
+        <div>
+          <p class="">© Copyright by Shirley Garrido Navarro Ft Sandra Zapata - 2020</p>
+          <p>This prototype is intended as a guide for current and new Pokémon Go players who want to be a Pokémon master</p>
+        </div>
+        <div class="social-network">
+            <img src="img/facebook.png">
+            <img src="img/instagram.png">
+            <img src="img/twitter.png">
+            <img src="img/google.png">
+        </div>
+        <div class="apps">
+          <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo"><img src="img/google-app.png" alt="Google Play" /></a>
+          <a href="https://apps.apple.com/es/app/pokemon-go/id1094591345"><img src="img/AppStore.png" alt="App Store" /></a>
+        </div>     
     </footer>
+    
     <script src="main.js" type="module"></script>
   </body>
 </html>
