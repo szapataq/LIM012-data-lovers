@@ -34,7 +34,6 @@ const showPokemon = (list) => {
 };
 // muestra todos los pokemon
 showPokemon(pokemonList);
-
 // muestra los tipos de pokemon seleccionando el select type
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
