@@ -282,33 +282,30 @@ img{
 
 /* ---------------Estilos Footer ---------------- */
 
-
 footer{
-    background-color:  #443F3E;
-    color: #EFEFEF;
+    background-color:#443F3E;
+    color: rgb(185, 182, 182);
     font-family: 'Lato', sans-serif;
-    margin: 0em auto;
-    max-width: 1100px;
+    margin: 1em auto;
+}
+footer .copyright,.team, .apps{
+    padding: 0.5em 1.5em;
+}
+.team{
+    border-left: solid 1px #337f7b;
+    border-right: solid 1px #337f7b;
+}
+.team img{
+    width: 2em;
+    height: 2em;
+}
+.team p{
+    margin: 0.5em;
+}
+.team div{
     display: flex;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
-footer div{
-    padding: 1em 2em;
-    border-left: solid 2px #337f7b;
-}
-.social-network img{
-    width: 30px;
-    width: 30px;
-}
-footer img{
-    width: 11em;
-}
-.apps{
-    padding: 1em; 
-    display: grid; 
-    justify-content: center; 
+    justify-content: space-between;
+    justify-items: center;
 }
 
 /* ---------------Fin estilos Card pokemon----------------- */
@@ -318,6 +315,19 @@ footer img{
         max-width: 650px;
     }
 }
+@media( min-width: 768px ){
+    footer{
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: 40% 35% 25% ;
+        margin: 2em auto;
+    }
+    .apps{
+        padding: 2em;
+    }
+}
+
+
 /* ---------Estilos en comun---------------------*/
 
 .comun{
