@@ -5,10 +5,11 @@ import {
 } from './data.js';
 
 const pokemonList = data.pokemon;
-const containerPokemons = document.getElementById('container-card');
+const containerPokemons = document.querySelector('#container-card');
 const elementTypeFilter = document.getElementById('element-type-filter');
 const btnSearch = document.getElementById('btn');
 const inputSearch = document.getElementById('search');
+const btnAll = document.querySelector('.all-pokemon');
 
 const showPokemon = (list) => {
   const containerPokemon = document.getElementById('container-card');
@@ -34,6 +35,10 @@ const showPokemon = (list) => {
 };
 // muestra todos los pokemon
 showPokemon(pokemonList);
+btnAll.addEventListener('click', () => {
+  containerPokemons.innerHTML = '';
+  showPokemon(pokemonList);
+});
 // muestra los tipos de pokemon seleccionando el select type
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
@@ -65,4 +70,13 @@ document.querySelector('.container-btn-top').addEventListener('click', () => {
     top: 0,
     behavior: 'smooth',
   });
+});
+
+const searchPokemon = (listPokemon, input) => {
+  const pokemon = listPokemon.filter(poke => poke.name.startsWith(input.toLowerCase()));
+  return pokemon;
+};
+inputSearch.addEventListener('input', () => {
+  containerPokemons.innerHTML = '';
+  showPokemon(searchPokemon(pokemonList, inputSearch.value));
 });

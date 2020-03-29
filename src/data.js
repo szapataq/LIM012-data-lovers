@@ -19,9 +19,10 @@ export const filterByType = (arrayObj, elementType) => {
 };
 
 export const searchPokemonByName = (arrayObj, namePokemon) => {
+  const namePoke = namePokemon.toLowerCase();
   const arrayName = [];
   for (let i = 0; i < arrayObj.length; i += 1) {
-    if (arrayObj[i].name === namePokemon) {
+    if (arrayObj[i].name === namePoke) {
       arrayName.push(arrayObj[i]);
     }
   }
