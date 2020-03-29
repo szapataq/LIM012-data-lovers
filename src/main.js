@@ -76,7 +76,7 @@ const searchPokemon = (listPokemon, input) => {
   const pokemon = listPokemon.filter(poke => poke.name.startsWith(input.toLowerCase()));
   return pokemon;
 };
-inputSearch.addEventListener('input', () => {
+inputSearch.addEventListener('keyup', () => {
   containerPokemons.innerHTML = '';
   showPokemon(searchPokemon(pokemonList, inputSearch.value));
 });
