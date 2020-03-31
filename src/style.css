@@ -91,7 +91,7 @@ header label:hover{
 
 .searcher img{
     width: 2em;
-    
+    margin: auto;
 }
 .search {
     padding: 0em 0em;
@@ -99,11 +99,6 @@ header label:hover{
     outline: 0;
     border: none;
     font-family: 'Lato', sans-serif;
-}
-.btn-search {
-    outline: 0;
-    border: none;
-    background-color:#ffffff;
 }
 
 /* -----------Estilos de Menu de funciones------------- */

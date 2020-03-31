@@ -7,15 +7,15 @@ import {
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
 const elementTypeFilter = document.getElementById('element-type-filter');
-const btnSearch = document.getElementById('btn');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 
 const showPokemon = (list) => {
   const containerPokemon = document.getElementById('container-card');
   let count = 0;
+  let card = '';
   list.forEach((pokem) => {
-    const card = `
+    card += `
     <div class="pokemon-group">
       <div class="poke-img">
         <img src="${pokem.img}">
@@ -27,19 +27,20 @@ const showPokemon = (list) => {
         <p class="poke-info bold"> HP Máx: ${pokem.stats['max-hp']}</p>
       </div>
     </div>`;
-    containerPokemon.innerHTML += card;
     count += 1;
   });
+  containerPokemon.innerHTML = card;
   document.getElementById('quantity').innerHTML = count;
   return containerPokemon;
 };
-// muestra todos los pokemon
-showPokemon(pokemonList);
+
+
+// BUTTON ALL, muestra todos los pokemon
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(pokemonList);
 });
-// muestra los tipos de pokemon seleccionando el select type
+// SELECTOR TYPE, muestra los tipos de pokemon seleccionando el select type
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
     containerPokemons.innerHTML = '';
@@ -50,9 +51,8 @@ elementTypeFilter.addEventListener('change', () => {
     showPokemon(catchFilter);
   }
 });
-
-// muestra los pokemon buscados atravez del input
-btnSearch.addEventListener('click', () => {
+// INPUT buscacdor
+inputSearch.addEventListener('input', () => {
   containerPokemons.innerHTML = '';
   showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
 });
@@ -72,11 +72,40 @@ document.querySelector('.container-btn-top').addEventListener('click', () => {
   });
 });
 
-const searchPokemon = (listPokemon, input) => {
-  const pokemon = listPokemon.filter(poke => poke.name.startsWith(input.toLowerCase()));
-  return pokemon;
+// evolucion de codigos
+
+/* export const filterByType = (arrayObj, elementType) => {
+  const arrayTipeFilter = [];
+  for (let i = 0; i < arrayObj.length; i += 1) {
+    const obj = arrayObj[i].type;
+    for (let j = 0; j < obj.length; j += 1) {
+      if (obj[j] === elementType) {
+        arrayTipeFilter.push(arrayObj[i]);
+      }
+    }
+  }
+  return arrayTipeFilter;
 };
-inputSearch.addEventListener('keyup', () => {
-  containerPokemons.innerHTML = '';
-  showPokemon(searchPokemon(pokemonList, inputSearch.value));
-});
+export const filterByType = (arrayObj, element) => {
+  const finalFilter = [];
+  arrayObj.forEach((obj) => {
+    obj.type.forEach((typeElements) => {
+      if (typeElements === element) {
+        finalFilter.push(obj);
+      }
+    });
+  });
+  return finalFilter;
+};
+
+export const searchPokemonByName = (arrayObj, namePokemon) => {
+  const namePoke = namePokemon.toLowerCase();
+  const arrayName = [];
+  for (let i = 0; i < arrayObj.length; i += 1) {
+    if (arrayObj[i].name === namePoke) {
+      arrayName.push(arrayObj[i]);
+    }
+  }
+  return arrayName;
+};
+*/
