@@ -2,13 +2,18 @@ import data from './data/pokemon/pokemon.js';
 import {
   filterByType,
   searchPokemonByName,
+  order,
+  changeOrder,
 } from './data.js';
 
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
 const elementTypeFilter = document.getElementById('element-type-filter');
+const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
+const btnOrder = document.querySelector('.btn-order');
+let btnSort = false;
 
 const showPokemon = (list) => {
   const containerPokemon = document.getElementById('container-card');
@@ -34,12 +39,28 @@ const showPokemon = (list) => {
   return containerPokemon;
 };
 
+showPokemon(pokemonList);
+// CREACION de mensaje de error
+const MessageError = () => {
+  containerPokemons.innerHTML = '';
+  const div = document.createElement('div');
+  const p = document.createElement('p');
+  const img = document.createElement('img');
+  div.className = 'message-error comun';
+  p.innerHTML = 'No hay ningun pokemon con ese nombre';
+  img.src = 'img/error.gif';
+  div.appendChild(p);
+  div.appendChild(img);
+  containerPokemons.appendChild(div);
+};
+
 
 // BUTTON ALL, muestra todos los pokemon
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(pokemonList);
 });
+
 // SELECTOR TYPE, muestra los tipos de pokemon seleccionando el select type
 elementTypeFilter.addEventListener('change', () => {
   if (elementTypeFilter.value === 'all') {
@@ -51,12 +72,37 @@ elementTypeFilter.addEventListener('change', () => {
     showPokemon(catchFilter);
   }
 });
-// INPUT buscacdor
+// INPUT buscador(POR MEJORAR)
 inputSearch.addEventListener('input', () => {
-  containerPokemons.innerHTML = '';
-  showPokemon(searchPokemonByName(pokemonList, inputSearch.value));
+  const pokemones = searchPokemonByName(pokemonList, inputSearch.value);
+  if (pokemones.length === 0) {
+    MessageError();
+    document.getElementById('quantity').innerHTML = 0;
+  } else {
+    containerPokemons.innerHTML = '';
+    showPokemon(pokemones);
+  }
 });
-
+// console.log(searchPokemonByName(pokemonList, ''));
+// EVENTOS para ordenar
+btnOrder.addEventListener('click', () => {
+  if (btnSort === false) {
+    btnOrder.classList.replace('btn-order', 'btn-orderAsc');
+    const ascendente = order(pokemonList, 'a-z');
+    showPokemon(ascendente);
+  }
+  if (btnSort === true) {
+    btnOrder.classList.replace('btn-orderAsc', 'btn-order');
+    const descendente = changeOrder(order(pokemonList, 'a-z'));
+    showPokemon(descendente);
+  }
+  btnSort = !btnSort;
+});
+orderBy.addEventListener('change', () => {
+  if (orderBy.value === 'hp') {
+    showPokemon(order(pokemonList, 'max-hp'));
+  }
+});
 // muestras las acciones del botton para que suba la pantalla
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 100) {
@@ -72,6 +118,7 @@ document.querySelector('.container-btn-top').addEventListener('click', () => {
   });
 });
 
+// console.log(pokemonList.reverse());
 // evolucion de codigos
 
 /* export const filterByType = (arrayObj, elementType) => {
@@ -107,5 +154,4 @@ export const searchPokemonByName = (arrayObj, namePokemon) => {
     }
   }
   return arrayName;
-};
-*/
+}; */

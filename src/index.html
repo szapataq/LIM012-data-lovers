@@ -59,11 +59,11 @@
           </div>
           <!--funciones de pokemon -->
           <div>
-            <label for="filters"> Filter </label>
-            <select id="filters">
-              <option>CP</option>
-              <option>HP</option>
-              <option>IV</option>
+            <label for="order-by"> Order by </label>
+            <select id="order-by">
+              <option value="num">Num</option>
+              <option value="cp">CP</option>
+              <option value="hp">HP</option>
               <option>Weaknesses</option>
               <option>Resistence</option>
               <option>Egg</option>
@@ -76,8 +76,6 @@
               <option> ID </option>
               <option>Highest to Lowest</option>
               <option>Lowest to Highest </option>
-              <option>A - Z</option>
-              <option>Z - A</option>
             </select>
           </div>
         </div>
@@ -87,13 +85,24 @@
             <p class="pokemones">Pokemones</p>
             <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
           </div>
-          <div>
-            <button class="btn-order"></button>
+          <div class="btn-order">  
           </div>
         </div>
         <!--contenedor de pokemones-->
-        <div id="container-card">
+        <div id="container-card"></div>
+          <!--<div class="pokemon-group">
+            <div class="poke-img">
+              <img src="">
+            </div>
+            <div class="container-info">
+              <p class="poke-name">Charizar</p>
+              <p class="poke-num"> num 001</p>
+              <p class="poke-info bold"> CP Máx: 22222</p>
+              <p class="poke-info bold"> HP Máx: 353</p>
+            </div>
+          </div>`;
         </div>
+        <div>-->
         <!--Boton para subir en la pantalla-->
         <div class="container-btn-top">
           <img src="img/btnTop.png" class="btn-top">

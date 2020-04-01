@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
+*{font-family: 'Lato', sans-serif;}
 body{
     margin:0em;
     padding: 0em;
-    font-family: 'Lato', sans-serif;
+
     background-color: #443F3E;
 }
 .pokedex{
@@ -147,6 +147,7 @@ header label:hover{
     margin: 2em;
     width: 3em;
 }
+
 /* ---------------Estilos conteo----------------- */
 
 .pokemones-quantity{ 
@@ -173,16 +174,26 @@ header label:hover{
     border-radius: 0.4em;
 }
 .btn-order{
+    background-image: url('img/asc.png');
     margin-top: 2em;
-    background-image: url("img/ord.png");
-    border-radius: 0.4em;
-    width: 4em;
-    height: 4em;
+    border-radius: 0.3em;
+    width: 3em;
+    height: 3em;
     outline: 0;
     border: solid 2px #337f7b;
 }
-.btn-order:hover{
-    background-color:#84d89b;
+.btn-orderAsc{
+    background-image: url('img/desc.png');
+    margin-top: 2em;
+    border-radius: 0.3em;
+    width: 3em;
+    height: 3em;
+    outline: 0;
+    border: solid 1px #337f7b;
+}
+.btn-order:hover,
+.btn-orderAsc:hover {
+    background-color:#a2db96;
 }
 @media( max-width: 768px ){
     #container-pokemon{/**contenedor de card*/
@@ -239,6 +250,9 @@ img{
 }
 .poke-info {
     font-size: 15px;
+}
+.message-error img{
+    width: 15em;
 }
 
 /* ---------------Estilos btn top ---------------- */
