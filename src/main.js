@@ -98,9 +98,20 @@ btnOrder.addEventListener('click', () => {
   }
   btnSort = !btnSort;
 });
+
+
 orderBy.addEventListener('change', () => {
-  if (orderBy.value === 'hp') {
-    showPokemon(order(pokemonList, 'max-hp'));
+  switch (orderBy.value) {
+    case 'num':
+      showPokemon(order(pokemonList, 'num'));
+      break;
+    case 'cp':
+      showPokemon(order(pokemonList, 'max-cp'));
+      break;
+    case 'hp':
+      showPokemon(order(pokemonList, 'max-hp'));
+      break;
+    default:
   }
 });
 // muestras las acciones del botton para que suba la pantalla
@@ -118,9 +129,27 @@ document.querySelector('.container-btn-top').addEventListener('click', () => {
   });
 });
 
-// console.log(pokemonList.reverse());
-// evolucion de codigos
+/*
+const modal = document.querySelector('.modal');
+const modalFlex = document.querySelector('.modal-flex');
+const open = document.querySelector('.pokemon-group');
+const close = document.querySelector('.close');
 
+open.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+window.addEventListener('click', (e) => {
+  if (e.target === modalFlex) {
+    modal.style.display = 'none';
+  }
+});
+*/
+// console.log(pokemonList.reverse());
+
+// evolucion de codigos
 /* export const filterByType = (arrayObj, elementType) => {
   const arrayTipeFilter = [];
   for (let i = 0; i < arrayObj.length; i += 1) {
@@ -155,3 +184,20 @@ export const searchPokemonByName = (arrayObj, namePokemon) => {
   }
   return arrayName;
 }; */
+/*
+const modal = document.querySelector('.modal');
+const modalFlex = document.querySelector('.modal-flex');
+const open = document.querySelector('.pokemon-group');
+const close = document.querySelector('.close');
+
+open.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+window.addEventListener('click', (e) => {
+  if (e.target === modalFlex) {
+    modal.style.display = 'none';
+  }
+}); */

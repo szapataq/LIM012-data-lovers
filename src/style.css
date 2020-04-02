@@ -126,7 +126,7 @@ header label:hover{
     transition: background-color 0.5s ease-out;
     outline: 0;
 }
-.menu-container div{
+.menu-container div button{
     padding: 1em 1em 0em 1em;
 }
 .menu-container select{
@@ -142,11 +142,7 @@ header label:hover{
 .menu-container label{
     padding: 0em 0.5em;
 }
-.ordenar button{
-    background-color: darkgoldenrod;
-    margin: 2em;
-    width: 3em;
-}
+
 
 /* ---------------Estilos conteo----------------- */
 
@@ -195,11 +191,16 @@ header label:hover{
 .btn-orderAsc:hover {
     background-color:#a2db96;
 }
+
+.orderNum{
+    background-color: crimson;
+}
 @media( max-width: 768px ){
     #container-pokemon{/**contenedor de card*/
         max-width: 650px;
     }
 }
+
 /* ---------------Estilos Card pokemon----------------- */
 #container-card{/**contenedor de card*/
     margin-left: auto;
@@ -254,7 +255,50 @@ img{
 .message-error img{
     width: 15em;
 }
-
+/* ---------------Estilos del Modal -------------- */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 105, 105, 0.438);
+}
+.modal-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container-modal{
+    position: relative;
+    background-color: cornsilk;
+    margin: auto;
+    width: 40%;
+    height: 80%;
+    animation-name: modal;
+    animation-duration: 0.5s;
+}
+.close{
+    font-size: 2em;
+    color: red;
+    display: grid;
+    justify-content: end;
+    cursor: pointer;
+}
+@keyframes modal{
+    from{
+        top: -330px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
 /* ---------------Estilos btn top ---------------- */
 
 .container-btn-top {
