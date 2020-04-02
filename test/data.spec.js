@@ -35,8 +35,8 @@ describe('Filtrar por tipo de elemento', () => {
   });
 
   it('Retorna arreglo de pokemones de tipo fuego', () => {
-    const array = filterByType(data.pokemon, 'fire');
-    array.forEach(typo => expect(typo.type).toContain('fire'));
+    const array = filterByType(data.pokemon, 'water');
+    array.forEach(typo => expect(typo.type).toContain('water'));
   });
 });
 
