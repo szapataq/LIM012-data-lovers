@@ -21,18 +21,14 @@
     </header>
     <main>
       <section class="pokedex">
-        <!--Buscador de pokemon por nombre-->
         <div class="searcher comun">
           <div>
             <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
             <img src="img/icon-search.png">
           </div>
         </div>
-        <!--Menu de funciones de filtrado-->
         <div class="menu-container comun bold">
-          <!--Boton de all pokemon-->
           <button class="all-pokemon bold">All pokemon</button>
-          <!--filtro por tipo de pokemon-->
           <div>
             <label for="element-type-filter"> Type </label>
             <select id="element-type-filter" >
@@ -57,17 +53,14 @@
               <option value="water"> Water</option>
             </select>
           </div>
-          <!--funciones de pokemon -->
           <div>
             <label for="order-by"> Order by </label>
             <select id="order-by">
               <option value="num">Num</option>
               <option value="cp">CP</option>
               <option value="hp">HP</option>
-
             </select>
           </div>
-          <!--Order by-->
           <div>
             <label for="order"> Other </label>
             <select id="order" >
@@ -77,28 +70,17 @@
             </select>
           </div>
         </div>
-        <!--mostrado de titulo, contador de pokemon y orden de a-z/ z-a-->
         <div class="pokemones-quantity">
           <div>
             <p class="pokemones">Pokemones</p>
             <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
           </div>
-          <div class="btn-order">  
-          </div>
+          <div class="btn-order"></div>
         </div>
-        <!--contenedor de pokemones-->
-        <div id="container-card">
-        </div>
+        <div id="container-card"></div>
+        <div class="container-modal"></div>
         <!--<div class="modal">
-          <div class="modal-flex"> 
-            <div class="container-modal">
-              <span class="close">&times;</span>
-              <h2>Este es mi modal</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente praesentium quos nostrum ullam consectetur alias modi. Excepturi accusantium quidem id facere natus deleniti, mollitia explicabo expedita veniam esse, necessitatibus repudiandae vitae aliquid reiciendis distinctio, nobis magni tenetur aut. Nostrum repudiandae in nobis nemo unde debitis laudantium perferendis inventore quia veniam exercitationem ab eveniet mollitia, consequatur natus fuga sint eos recusandae dolore laborum. Delectus, est! Asperiores, ad magnam! Maxime, id reprehenderit?
-              </p>
-              <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
-            </div>
-          </div>
+
         </div>-->
         <!--Boton para subir en la pantalla-->
         <div class="container-btn-top">
@@ -106,8 +88,6 @@
         </div>
       </section>
     </main>
-
-
     <footer>
         <div class="copyright">
           <h3 class="bold comun">© Copyright by Shirley Garrido Navarro Ft Sandra Zapata - 2020</h3>

@@ -8,20 +8,43 @@ import {
 
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
+const containerModal = document.querySelector('.container-modal');
 const elementTypeFilter = document.getElementById('element-type-filter');
 const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 const btnOrder = document.querySelector('.btn-order');
+
+
 let btnSort = false;
 
+const showModal = (pokemon) => {
+  const modal = document.createElement('div');
+  modal.className = 'modal ocultar';
+  modal.innerHTML = `<div class="modal-flex"> 
+                    <div class="container-modal">
+                      <span class="close">&times;</span>
+                      <h2>${pokemon.name}</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente praesentium quos nostrum ullam consectetur alias modi. Excepturi accusantium quidem id facere natus deleniti, mollitia explicabo expedita veniam esse, necessitatibus repudiandae vitae aliquid reiciendis distinctio, nobis magni tenetur aut. Nostrum repudiandae in nobis nemo unde debitis laudantium perferendis inventore quia veniam exercitationem ab eveniet mollitia, consequatur natus fuga sint eos recusandae dolore laborum. Delectus, est! Asperiores, ad magnam! Maxime, id reprehenderit?
+                      </p>
+                      <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
+                    </div>
+                    </div>`;
+  containerModal.appendChild(modal);
+  const close = document.querySelector('.close');
+  close.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+  return modal;
+};
+
+// Historia 1 y 2: mostrar pokemones y realizar un contador
 const showPokemon = (list) => {
-  const containerPokemon = document.getElementById('container-card');
   let count = 0;
-  let card = '';
   list.forEach((pokem) => {
-    card += `
-    <div class="pokemon-group">
+    const card = document.createElement('div');
+    card.className = 'pokemon-group';
+    card.innerHTML = `
       <div class="poke-img">
         <img src="${pokem.img}">
       </div>
@@ -30,17 +53,39 @@ const showPokemon = (list) => {
         <p class="poke-num"> N° ${pokem.num}</p>
         <p class="poke-info bold"> CP Máx: ${pokem.stats['max-cp']}</p>
         <p class="poke-info bold"> HP Máx: ${pokem.stats['max-hp']}</p>
-      </div>
-    </div>`;
+      </div>`;
+    const m = showModal(pokem);
+    card.addEventListener('click', () => {
+      m.style.display = 'block';
+    });
     count += 1;
+    containerPokemons.appendChild(card);
   });
-  containerPokemon.innerHTML = card;
+
   document.getElementById('quantity').innerHTML = count;
-  return containerPokemon;
+  return containerPokemons;
 };
 
-showPokemon(pokemonList);
-// CREACION de mensaje de error
+showPokemon(pokemonList); // llamado al metodo
+
+btnAll.addEventListener('click', () => {
+  containerPokemons.innerHTML = '';
+  showPokemon(pokemonList);
+});
+
+// Historia 3: filtrar pokemones por tipo
+elementTypeFilter.addEventListener('change', () => {
+  if (elementTypeFilter.value === 'all') {
+    containerPokemons.innerHTML = '';
+    showPokemon(pokemonList);
+  } else {
+    const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+    containerPokemons.innerHTML = '';
+    showPokemon(catchFilter);
+  }
+});
+
+// Historia 4: buscar pokemon por nombre
 const MessageError = () => {
   containerPokemons.innerHTML = '';
   const div = document.createElement('div');
@@ -54,25 +99,6 @@ const MessageError = () => {
   containerPokemons.appendChild(div);
 };
 
-
-// BUTTON ALL, muestra todos los pokemon
-btnAll.addEventListener('click', () => {
-  containerPokemons.innerHTML = '';
-  showPokemon(pokemonList);
-});
-
-// SELECTOR TYPE, muestra los tipos de pokemon seleccionando el select type
-elementTypeFilter.addEventListener('change', () => {
-  if (elementTypeFilter.value === 'all') {
-    containerPokemons.innerHTML = '';
-    showPokemon(pokemonList);
-  } else {
-    const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
-    containerPokemons.innerHTML = '';
-    showPokemon(catchFilter);
-  }
-});
-// INPUT buscador(POR MEJORAR)
 inputSearch.addEventListener('input', () => {
   const pokemones = searchPokemonByName(pokemonList, inputSearch.value);
   if (pokemones.length === 0) {
@@ -83,38 +109,44 @@ inputSearch.addEventListener('input', () => {
     showPokemon(pokemones);
   }
 });
-// console.log(searchPokemonByName(pokemonList, ''));
-// EVENTOS para ordenar
+
+// Historia 5: Ordenar alfabeticamente
 btnOrder.addEventListener('click', () => {
   if (btnSort === false) {
+    containerPokemons.innerHTML = '';
     btnOrder.classList.replace('btn-order', 'btn-orderAsc');
     const ascendente = order(pokemonList, 'a-z');
     showPokemon(ascendente);
   }
   if (btnSort === true) {
+    containerPokemons.innerHTML = '';
     btnOrder.classList.replace('btn-orderAsc', 'btn-order');
     const descendente = changeOrder(order(pokemonList, 'a-z'));
     showPokemon(descendente);
   }
   btnSort = !btnSort;
 });
-
-
+// Historia 6,7,8: Ordenar por num, max-cp, max-hp
 orderBy.addEventListener('change', () => {
   switch (orderBy.value) {
     case 'num':
+      containerPokemons.innerHTML = '';
       showPokemon(order(pokemonList, 'num'));
       break;
     case 'cp':
+      containerPokemons.innerHTML = '';
       showPokemon(order(pokemonList, 'max-cp'));
       break;
     case 'hp':
+      containerPokemons.innerHTML = '';
       showPokemon(order(pokemonList, 'max-hp'));
       break;
     default:
   }
 });
-// muestras las acciones del botton para que suba la pantalla
+
+//
+// Funcion Extra : boton para subir en pantalla
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 100) {
     document.querySelector('.container-btn-top').classList.add('show');
@@ -196,8 +228,5 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
   modal.style.display = 'none';
 });
-window.addEventListener('click', (e) => {
-  if (e.target === modalFlex) {
-    modal.style.display = 'none';
-  }
+
 }); */

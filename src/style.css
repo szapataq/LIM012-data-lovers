@@ -257,8 +257,10 @@ img{
     width: 15em;
 }
 /* ---------------Estilos del Modal -------------- */
-.modal{
+.ocultar {
     display: none;
+}
+.modal{
     position: fixed;
     z-index: 1;
     overflow: auto;

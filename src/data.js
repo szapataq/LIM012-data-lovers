@@ -7,7 +7,6 @@ export const searchPokemonByName = (arrayObj, input) => {
   const pokemon = arrayObj.filter(poke => poke.name.startsWith(input.toLowerCase()));
   return pokemon;
 };
-
 export const order = (arrayObj, orderBy) => {
   let sortObj = '';
   switch (orderBy) {
