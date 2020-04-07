@@ -14,26 +14,88 @@ const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 const btnOrder = document.querySelector('.btn-order');
-
-
 let btnSort = false;
 
+const TypePokemon = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((typeElement) => {
+    imgEachPokemon += `<img src="img/icon-type/${typeElement}.png" alt=" type pokemon"/>`;
+  });
+  return imgEachPokemon;
+};
+const resistant = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((resistantPokemon) => {
+    imgEachPokemon += `<img src="img/icon-type/${resistantPokemon}.png" alt="resistant"/>`;
+  });
+  return imgEachPokemon;
+};
+const weaknesses = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((weaknessesPokemon) => {
+    imgEachPokemon += `<img src="img/icon-type/${weaknessesPokemon}.png" alt="weaknesses"/>`;
+  });
+  return imgEachPokemon;
+};
 const showModal = (pokemon) => {
   const modal = document.createElement('div');
-  modal.className = 'modal ocultar';
+  modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
-                    <div class="container-modal">
-                      <span class="close">&times;</span>
-                      <h2>${pokemon.name}</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente praesentium quos nostrum ullam consectetur alias modi. Excepturi accusantium quidem id facere natus deleniti, mollitia explicabo expedita veniam esse, necessitatibus repudiandae vitae aliquid reiciendis distinctio, nobis magni tenetur aut. Nostrum repudiandae in nobis nemo unde debitis laudantium perferendis inventore quia veniam exercitationem ab eveniet mollitia, consequatur natus fuga sint eos recusandae dolore laborum. Delectus, est! Asperiores, ad magnam! Maxime, id reprehenderit?
-                      </p>
-                      <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
-                    </div>
+                      <div class="container-modal ${pokemon.type[0]} comun-card">
+                          <i class="close fas fa-times-circle"></i>
+                          <div class="img-modal"><img src="${pokemon.img}"></div>
+                          <div class="modal-info">
+                            <p class="poke-name-card bold">${pokemon.name} N°<spam>${pokemon.num}</spam></p>
+                            <p class="about">${pokemon.about}</p>
+                            <div class="size-pokemon">
+                              <div class="comun-modal contenido">
+                                <img src="img/height.png">
+                                <div>
+                                  <p class="bold">Height</p>
+                                  <p>${pokemon.size.height}</p>
+                                </div>                                
+                              </div>
+                              <div class="comun-modal contenido">
+                                <img src="img/egg.png">
+                                <div>
+                                  <p class="bold">Egg</p>
+                                  <p>${pokemon.egg}</p>
+                                </div>
+                              </div>
+                              <div class="comun-modal contenido">
+                                <img src="img/weight.png">
+                                <div>
+                                  <p class="bold">Weight</p>
+                                  <p>${pokemon.size.weight}</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="resist-weakne">
+                              <div class="comun-modal comun bold">
+                                <p>Resistant</p>
+                                <div class="resistant">${resistant(pokemon.resistant)}</div>
+                              </div>
+                              <div class="comun-modal comun bold">
+                                <p>Weaknesses</p>
+                                <div class="resistant">${weaknesses(pokemon.weaknesses)}</div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                     </div>`;
-  containerModal.appendChild(modal);
-  const close = document.querySelector('.close');
-  close.addEventListener('click', () => {
-    modal.style.display = 'none';
+  document.querySelector('.container-modal').appendChild(modal);
+
+  modal.style.display = 'block';
+  modal.querySelector('.close').addEventListener('click', () => {
+    modal.classList.remove('modal');
+    containerModal.innerHTML = '';
+  });
+  const modalFlex = document.querySelector('.modal-flex');
+  window.addEventListener('click', (evento) => {
+    if (evento.target === modalFlex) {
+      modal.classList.remove('modal');
+      containerModal.innerHTML = '';
+    }
   });
   return modal;
 };
@@ -46,28 +108,28 @@ const showPokemon = (list) => {
     card.className = 'pokemon-group';
     card.innerHTML = `
       <div class="poke-img">
+        <p class="poke-num">${pokem.num}</p>
         <img src="${pokem.img}">
       </div>
       <div class="container-info">
         <p class="poke-name">${pokem.name}</p>
-        <p class="poke-num"> N° ${pokem.num}</p>
         <p class="poke-info bold"> CP Máx: ${pokem.stats['max-cp']}</p>
         <p class="poke-info bold"> HP Máx: ${pokem.stats['max-hp']}</p>
+        <div class="comun">${TypePokemon(pokem.type)}</div>
       </div>`;
-    const m = showModal(pokem);
+
     card.addEventListener('click', () => {
-      m.style.display = 'block';
+      const show = showModal(pokem);
+      show.classList.add('modal');
     });
     count += 1;
     containerPokemons.appendChild(card);
   });
-
   document.getElementById('quantity').innerHTML = count;
   return containerPokemons;
 };
 
 showPokemon(pokemonList); // llamado al metodo
-
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(pokemonList);
@@ -145,7 +207,6 @@ orderBy.addEventListener('change', () => {
   }
 });
 
-//
 // Funcion Extra : boton para subir en pantalla
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 100) {
@@ -230,3 +291,28 @@ close.addEventListener('click', () => {
 });
 
 }); */
+/* const evo = (arrayObj) => {
+  const arrayTipeFilter = [];
+  const tienenEvolucion = [];
+  const x = [];
+  for (let i = 0; i < arrayObj.length; i += 1) {
+    const obj = arrayObj[i].evolution;
+    console.log(obj);
+    const next = obj['next-evolution'];
+    const prev = obj['prev-evolution'];
+    if (next === undefined && prev === undefined) {
+      arrayTipeFilter.push(arrayObj[i].num);
+    }
+    if (next !== undefined && prev !== undefined) {
+      tienenEvolucion.push(arrayObj[i].num);
+    }
+    if (next !== undefined) {
+      const solonext = next[0]['next-evolution'][0].num;
+    }
+    if (prev !== undefined) {
+      const solonext = next[0]['next-evolution'][0].num;
+    }
+  }
+  return tienenEvolucion;
+};
+console.log(evo(pokemonList)); */
