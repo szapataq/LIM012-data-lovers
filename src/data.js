@@ -32,3 +32,39 @@ export const order = (arrayObj, orderBy) => {
 };
 
 export const changeOrder = array => array.reverse();
+
+export const calculateStab = (attack, tipoPokemon) => {
+  const result = attack.map((obj) => {
+    const damage = Number(obj['base-damage']);
+    if (tipoPokemon.includes(obj.type)) {
+      const stab = Number((damage * 20) / 100 + damage);
+      return stab;
+    }
+    return damage;
+  });
+  return result;
+};
+
+export const calculateDps = (attack, tipoPokemon) => {
+  const result = attack.map((obj) => {
+    const damage = Number(obj['base-damage']);
+    const time = Number(obj['move-duration-seg']);
+    let dps = Math.round((damage / time));
+    if (tipoPokemon.includes(obj.type)) {
+      const stab = Number((damage * 20) / 100 + damage);
+      dps = Math.round((stab / time));
+    }
+    return dps;
+  });
+  return result;
+};
+
+export const calculateEps = (attack) => {
+  const result = attack.map((obj) => {
+    const energy = Number(obj.energy);
+    const time = Number(obj['move-duration-seg']);
+    const eps = Math.round(energy / time);
+    return eps;
+  });
+  return result;
+};

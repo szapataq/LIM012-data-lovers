@@ -4,6 +4,9 @@ import {
   searchPokemonByName,
   order,
   changeOrder,
+  calculateStab,
+  calculateDps,
+  calculateEps,
 } from './data.js';
 
 const pokemonList = data.pokemon;
@@ -316,3 +319,13 @@ close.addEventListener('click', () => {
   return tienenEvolucion;
 };
 console.log(evo(pokemonList)); */
+
+
+pokemonList.forEach((p) => {
+  const tipoPokemon = p.type;
+  const ataqueQuick = p['quick-move'];
+  const stab = calculateStab(ataqueQuick, tipoPokemon);
+  const dps = calculateDps(ataqueQuick, tipoPokemon);
+  const eps = calculateEps(ataqueQuick);
+  console.log(dps);
+});
