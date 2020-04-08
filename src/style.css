@@ -110,7 +110,7 @@ header label:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 2em 0em;
 }
 .all-pokemon{
     font-family: 'Lato', sans-serif;
@@ -156,41 +156,32 @@ header label:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 270px;
-    border-top: solid 2px #337f7b;
+    border-top: dashed 2px #337f7b;
 }
 .pokemones{
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: bold;
 }
-.quantity{
-    text-align: center;
-    width: 120px;
-    font-family: 'Lato', sans-serif;
-    background: linear-gradient(to right,#a2db96, #84d89b, 	#6ad59f, #51d2a2,#2ecea8);
-    padding: 0.3em 0.3em;
-    border-radius: 0.4em;
+#quantity{
+    color: rgb(201, 39, 11);
+    font-size: 1em;
 }
 .btn-order{
-    background-image: url('img/asc.png');
-    margin-top: 2em;
-    border-radius: 0.3em;
-    width: 3em;
+    background-image: url('img/desc.png');
+    background-repeat: repeat;
+    background-size: cover;
+    margin-top: 1em;
+    width: 6em;
     height: 3em;
-    outline: 0;
-    border: solid 2px #337f7b;
+    
 }
 .btn-orderAsc{
-    background-image: url('img/desc.png');
-    margin-top: 2em;
-    border-radius: 0.3em;
-    width: 3em;
+    background-image: url('img/asc.png');
+    background-repeat: repeat;
+    background-size: cover;
+    margin-top: 1em;
+    width: 6em;
     height: 3em;
-    outline: 0;
-    border: solid 1px #337f7b;
-}
-.btn-order:hover,
-.btn-orderAsc:hover {
-    background-color:#a2db96;
 }
 
 .orderNum{

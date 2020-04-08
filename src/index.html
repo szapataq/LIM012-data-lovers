@@ -21,6 +21,17 @@
     </header>
     <main>
       <section class="pokedex">
+        <div class="bannerBox">
+          <picture class="banner">
+            <source media="(min-width: 1440px)" srcset="img/lapL.png">
+            <source media="(min-width: 1349px)" srcset="img/lapM.png">
+            <source media="(min-width: 1024px)" srcset="img/lapN.png">
+            <source media="(min-width: 768px)" srcset="img/tab.png">
+            <source media="(min-width: 425px)" srcset="img/mL.png">
+            <source media="(min-width: 375px)" srcset="img/mM.png">
+            <img src="img/mS.png" style="width:auto;">
+          </picture>
+        </div>
         <div class="searcher">
           <div>
             <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
@@ -28,7 +39,7 @@
           </div>
         </div>
         <div class="menu-container comun bold">
-          <button class="all-pokemon bold">All pokemon</button>
+          <button class="all-pokemon bold">Reset</button>
           <div>
             <label for="element-type-filter"> Type </label>
             <select id="element-type-filter" >
@@ -54,27 +65,17 @@
             </select>
           </div>
           <div>
-            <label for="order-by"> Order by </label>
+            <label for="order-by"> Order by</label>
             <select id="order-by">
               <option value="num">Num</option>
               <option value="cp">CP</option>
               <option value="hp">HP</option>
             </select>
           </div>
-          <div>
-            <label for="order"> Other </label>
-            <select id="order" >
-              <option>Weaknesses</option>
-              <option>Resistence</option>
-              <option>Egg</option>
-            </select>
-          </div>
         </div>
         <div class="pokemones-quantity">
-          <div>
-            <p class="pokemones">Pokemones</p>
-            <p class="quantity">QUANTITY: <spam id="quantity"></spam></p>
-          </div>
+            <p class="pokemones">Pokemones( <spam id="quantity"></spam> )</p>
+
           <div class="btn-order"></div>
         </div>
         <div id="container-card"></div>
