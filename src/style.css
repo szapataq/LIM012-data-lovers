@@ -357,7 +357,6 @@ header label:hover{
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
 }
-
 .comun-modal{
     text-align: center;
     padding: 0.5em 0em;
@@ -385,7 +384,28 @@ header label:hover{
 .resist-weakne p{
     margin: 0;
 }
-
+.quick-move{
+    display: grid;
+    grid-template-columns: 40% repeat(3,1fr);
+}
+.quick-move div{
+    text-align: center;
+}
+.comun-attack{
+    background-color: #e1e2e2;
+    border-bottom: solid 1px white;
+    font-size: 0.8em;
+    margin: 0em;
+}
+.encabezado{
+    margin: 0em;
+    font-size: 0.8em;
+    background-color: #a2db96;
+    border-bottom: solid 1px white;  
+}
+.title{
+    margin: 0.5em;
+}
 @keyframes modal{
     from{
         top: -350px;

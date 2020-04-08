@@ -40,6 +40,18 @@ const weaknesses = (arrayType) => {
   });
   return imgEachPokemon;
 };
+const obtainNames = (attack) => {
+  const names = attack.map(name => name.name);
+  return names;
+};
+const showsAttacks = (arrayAtacks) => {
+  let stabEachPokemon = '';
+  arrayAtacks.forEach((nuevo) => {
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+  });
+  return stabEachPokemon;
+};
+
 const showModal = (pokemon) => {
   const modal = document.createElement('div');
   modal.classList.add('modal');
@@ -82,6 +94,32 @@ const showModal = (pokemon) => {
                                 <p>Weaknesses</p>
                                 <div class="resistant">${weaknesses(pokemon.weaknesses)}</div>
                               </div>
+                            </div>
+                            <p class="bold comun title">Quick move</p>
+                            <div class="comun bold quick-move">
+                              <p class="encabezado">Name</p>
+                              <p class="encabezado">STAB</p>
+                              <p class="encabezado">DPS</p>
+                              <p class="encabezado">EPS</p>
+                            </div>
+                            <div class="quick-move">
+                              <div>${showsAttacks(obtainNames(pokemon['quick-move']))}</div>
+                              <div>${showsAttacks(calculateStab(pokemon['quick-move'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateDps(pokemon['quick-move'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateEps(pokemon['quick-move']))}</div>
+                            </div>
+                            <p class="bold comun title">Special attack</p>
+                            <div class="comun bold quick-move">
+                              <p class="encabezado">Name</p>
+                              <p class="encabezado">STAB</p>
+                              <p class="encabezado">DPS</p>
+                              <p class="encabezado">EPS</p>
+                            </div>
+                            <div class="quick-move">
+                              <div>${showsAttacks(obtainNames(pokemon['special-attack']))}</div>
+                              <div>${showsAttacks(calculateStab(pokemon['special-attack'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateDps(pokemon['special-attack'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateEps(pokemon['special-attack']))}</div>
                             </div>
                           </div>
                       </div>
@@ -135,7 +173,7 @@ const showPokemon = (list) => {
 showPokemon(pokemonList); // llamado al metodo
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
-  showPokemon(pokemonList);
+  showPokemon(order(pokemonList, 'num'));
 });
 
 // Historia 3: filtrar pokemones por tipo
@@ -318,9 +356,7 @@ close.addEventListener('click', () => {
   }
   return tienenEvolucion;
 };
-console.log(evo(pokemonList)); */
-
-
+console.log(evo(pokemonList));
 pokemonList.forEach((p) => {
   const tipoPokemon = p.type;
   const ataqueQuick = p['quick-move'];
@@ -329,3 +365,11 @@ pokemonList.forEach((p) => {
   const eps = calculateEps(ataqueQuick);
   console.log(dps);
 });
+
+pokemonList.forEach((obj) => {
+  const at = obj['quick-move'];
+  const names = at.map((name) => {
+    return name.name;
+  });
+  console.log(names);
+}); */
