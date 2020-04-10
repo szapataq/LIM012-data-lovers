@@ -158,7 +158,6 @@ const showPokemon = (list) => {
         <p class="poke-info bold"> HP Máx: ${pokem.stats['max-hp']}</p>
         <div class="comun">${TypePokemon(pokem.type)}</div>
       </div>`;
-
     card.addEventListener('click', () => {
       const show = showModal(pokem);
       show.classList.add('modal');
@@ -238,7 +237,9 @@ orderBy.addEventListener('change', () => {
       break;
     case 'cp':
       containerPokemons.innerHTML = '';
-      showPokemon(order(pokemonList, 'max-cp'));
+      // eslint-disable-next-line no-case-declarations
+      const orderCP = order(pokemonList, 'max-cp');
+      showPokemon(changeOrder(orderCP));
       break;
     case 'hp':
       containerPokemons.innerHTML = '';

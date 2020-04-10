@@ -1,6 +1,5 @@
 export const filterByType = (arrayObj, elementType) => {
-  let pokemon = [];
-  pokemon = arrayObj.filter(obj => obj.type.includes(elementType));
+  const pokemon = arrayObj.filter(obj => obj.type.includes(elementType));
   return pokemon;
 };
 export const searchPokemonByName = (arrayObj, input) => {
@@ -8,14 +7,10 @@ export const searchPokemonByName = (arrayObj, input) => {
   return pokemon;
 };
 export const order = (arrayObj, orderBy) => {
-  let sortObj = '';
+  let sortObj = [];
   switch (orderBy) {
     case 'a-z':
-      sortObj = arrayObj.sort((a, b) => {
-        if (a.name < b.name) return -1;
-        if (a.name > b.name) return 1;
-        return 0;
-      });
+      sortObj = arrayObj.sort((a, b) => ((a.name <= b.name) ? -1 : 1));
       break;
     case 'max-cp':
       sortObj = arrayObj.sort((a, b) => a.stats['max-cp'] - b.stats['max-cp']);
