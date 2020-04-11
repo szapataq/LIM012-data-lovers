@@ -259,8 +259,8 @@ elemento y ataques)  PARA poder tener una mejor estrategia de que pokemon utiliz
 ## 4. Objetivos de aprendizaje 
 
 ### UX
-- [✔️] Diseñar la aplicación pensando y entendiendo al usuario.
-- [✔️] Crear prototipos para obtener feedback e iterar.
+- [x] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Crear prototipos para obtener feedback e iterar.
 - [✔️] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [✔️] Planear y ejecutar tests de usabilidad.
 
