@@ -48,9 +48,24 @@ Por defecto la data contiene una amplia diversidad de colores, es por ello que s
  
 ### 2.2 Vista Final Desktop 💻
 
+
 ### 2.3 Vista Final Mobile 📲
 
+![3](https://user-images.githubusercontent.com/60928765/78805031-86a8a800-7986-11ea-97d2-7797effa0f74.png)
+![4](https://user-images.githubusercontent.com/60928765/78805051-8e684c80-7986-11ea-8772-c267f0735e6e.png)
+![5](https://user-images.githubusercontent.com/60928765/78805083-988a4b00-7986-11ea-9820-8c0a2b09bf1e.png)
+![6](https://user-images.githubusercontent.com/60928765/78805112-a2ac4980-7986-11ea-9b01-19ed9f28a60c.png)
+
+
 ### 2.4 Vista Final Tablet 📱
+
+![7](https://user-images.githubusercontent.com/60928765/78810127-8cee5280-798d-11ea-8668-1124d00fad79.png)
+![8](https://user-images.githubusercontent.com/60928765/78810145-937cca00-798d-11ea-862d-6db8e2873105.png)
+![9](https://user-images.githubusercontent.com/60928765/78810163-9d9ec880-798d-11ea-9e37-aa8b62eac632.png)
+![10](https://user-images.githubusercontent.com/60928765/78810183-a2637c80-798d-11ea-9eb0-6ed1ae72bb9f.png)
+![11](https://user-images.githubusercontent.com/60928765/78810225-b313f280-798d-11ea-80d7-702c77f7b610.png)
+![12](https://user-images.githubusercontent.com/60928765/78810252-bc04c400-798d-11ea-85de-a10cd8eb8f06.png)
+
 
 ## 3. Investigación UX 🔍
 
@@ -266,17 +281,17 @@ elemento y ataques)  PARA poder tener una mejor estrategia de que pokemon utiliz
 - [✔️] Entender el uso de condicionales (if-else | switch).
 - [✔️] Entender el uso de bucles (for | forEach).
 - [〰️] Entender la diferencia entre expression y statements.
-- [〰️] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [✔️] Utilizar funciones (parámetros | argumentos | valor de retorno).
 - [✔️] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [✔️] Utilizar ES Modules (import | export).
 
 ### Pruebas Unitarias (testing)
-- [〰️] Testear funciones (funciones puras).
+- [✔️] Testear funciones (funciones puras).
 
 ### Git y GitHub
 - [✔️] Ejecutar comandos de git (add | commit | pull | status | push).
 - [✔️] Utilizar los repositorios de GitHub (clone | fork | gh-pages).
-- [〰️] Colaborar en Github (pull requests).
+- [❌] Colaborar en Github (pull requests).
 
 ### Buenas prácticas de desarrollo
 - [✔️] Organizar y dividir el código en módulos (Modularización).

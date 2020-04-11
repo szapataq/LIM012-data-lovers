@@ -1,36 +1,20 @@
 import {
-  filterByType,
-  searchPokemonByName,
-  order,
-  changeOrder,
-  calculateStab,
-  calculateDps,
-  calculateEps,
+  filterByType, searchPokemonByName, order, changeOrder, calculateStab,
+  calculateDps, calculateEps,
 } from '../src/data.js';
 import {
-  inputTest,
-  outputTypeElement,
-  outputSearchName1,
-  outputSearchName2,
-  inputTestOrder,
-  outputAlfaAscendente,
-  outputCPAscendente,
-  outputHPAscendente,
-  outputNumAscendente,
-  outputAlfaDescendente,
-  outputCPDescendente,
-  outputHPDescendente,
-  outputNumDescendente,
-  inputAttack,
-  typePokemon,
-  outputStab,
-  outputDps,
-  outputEps,
+  inputTest, outputTypeElement, outputSearchName1, outputSearchName2, inputTestOrder,
+  outputAlfaAscendente, outputCPAscendente, outputHPAscendente, outputNumAscendente,
+  outputAlfaDescendente, outputCPDescendente, outputHPDescendente, outputNumDescendente,
+  inputAttack, typePokemon, outputStab, outputDps, outputEps,
 } from '../src/testCases.js';
 
 describe('Filtrar por tipo de elemento', () => {
   it('Deberia ser una funcion', () => {
     expect(typeof filterByType).toBe('function');
+  });
+  it('Deberia ser un objeto', () => {
+    expect(typeof inputTest).toBe('object');
   });
   it('Deberia retornar un arreglos de los pokemon que son tipo "fuego"', () => {
     expect(filterByType(inputTest, 'fire')).toEqual(outputTypeElement);
