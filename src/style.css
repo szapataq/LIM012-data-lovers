@@ -99,7 +99,6 @@ header label:hover{
     border: none;
     font-family: 'Lato', sans-serif;
 }
-
 /* -----------Estilos de Menu de funciones------------- */
 
 .menu-container{
@@ -257,7 +256,7 @@ header label:hover{
 /* ---------------Estilos del Modal -------------- */
 
 .modal{
-	display: none;
+	display: block;
 	position: fixed;
 	z-index:3;
 	overflow: auto;
@@ -269,6 +268,7 @@ header label:hover{
 
 }
 .modal-flex{
+
     width: 100%;
     height: 100%;
     display: flex;
